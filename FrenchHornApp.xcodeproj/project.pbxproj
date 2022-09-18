@@ -7,18 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1402AB28C774880028D884 /* ClefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1402AA28C774880028D884 /* ClefView.swift */; };
+		EB382A1628CE669100AEF9F7 /* FingeringChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */; };
 		EB4D9F4828BD5B5900C7DDCC /* FrenchHornAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */; };
 		EB4D9F4A28BD5B5900C7DDCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */; };
 		EB4D9F4C28BD5B5B00C7DDCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */; };
 		EB4D9F4F28BD5B5B00C7DDCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4E28BD5B5B00C7DDCC /* Preview Assets.xcassets */; };
+		EB4D9F5728BEC67500C7DDCC /* Fingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5628BEC67500C7DDCC /* Fingerings.swift */; };
+		EB4D9F5928BECB5A00C7DDCC /* NoteStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5828BECB5A00C7DDCC /* NoteStruct.swift */; };
+		EB4D9F5B28BECB6C00C7DDCC /* NoteFingeringMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5A28BECB6C00C7DDCC /* NoteFingeringMapping.swift */; };
+		EB4D9F5D28BED38C00C7DDCC /* StaffConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */; };
+		EB4D9F5F28BED47500C7DDCC /* NotesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5E28BED47500C7DDCC /* NotesCollection.swift */; };
+		EB4D9F6128BED4AD00C7DDCC /* NoteNameMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6028BED4AD00C7DDCC /* NoteNameMappings.swift */; };
+		EB4D9F6328BEDEC100C7DDCC /* NoteVisualizationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6228BEDEC100C7DDCC /* NoteVisualizationCollection.swift */; };
+		EB4D9F6528BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6428BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift */; };
+		EB4D9F6728BEE85600C7DDCC /* TranspositionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */; };
+		EB4D9F6B28BEF0B700C7DDCC /* FingeringsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6A28BEF0B700C7DDCC /* FingeringsCollection.swift */; };
+		EB4D9F6E28BEF17200C7DDCC /* NoteVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */; };
+		EB4D9F7128C14A7700C7DDCC /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB4D9F7028C14A7700C7DDCC /* AudioKit */; };
+		EB4D9F7428C14A9500C7DDCC /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = EB4D9F7328C14A9500C7DDCC /* AudioKitEX */; };
+		EB4D9F7728C14AB200C7DDCC /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = EB4D9F7628C14AB200C7DDCC /* AudioKitUI */; };
+		EB4D9F7A28C14AE500C7DDCC /* KissFFT in Frameworks */ = {isa = PBXBuildFile; productRef = EB4D9F7928C14AE500C7DDCC /* KissFFT */; };
+		EB4D9F7D28C14B4300C7DDCC /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = EB4D9F7C28C14B4300C7DDCC /* SoundpipeAudioKit */; };
+		EB59ED7E28D1326100FC21EA /* IndividualFingeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */; };
+		EB59ED8028D136F600FC21EA /* AssembledNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7F28D136F600FC21EA /* AssembledNoteView.swift */; };
+		EB59ED8228D1370E00FC21EA /* LedgerLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */; };
+		EB59ED8428D1373000FC21EA /* WholeNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8328D1373000FC21EA /* WholeNoteView.swift */; };
+		EB59ED8628D1376500FC21EA /* StaffLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8528D1376500FC21EA /* StaffLinesView.swift */; };
+		EB59ED8828D1378000FC21EA /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8728D1378000FC21EA /* NoteNameView.swift */; };
+		EB59ED8A28D1379700FC21EA /* AssembledStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */; };
+		EB59ED8C28D137B200FC21EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8B28D137B200FC21EA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB1402AA28C774880028D884 /* ClefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClefView.swift; sourceTree = "<group>"; };
+		EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeringChartView.swift; sourceTree = "<group>"; };
 		EB4D9F4428BD5B5900C7DDCC /* FrenchHornApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrenchHornApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchHornAppApp.swift; sourceTree = "<group>"; };
 		EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4D9F4E28BD5B5B00C7DDCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB4D9F5628BEC67500C7DDCC /* Fingerings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fingerings.swift; sourceTree = "<group>"; };
+		EB4D9F5828BECB5A00C7DDCC /* NoteStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteStruct.swift; sourceTree = "<group>"; };
+		EB4D9F5A28BECB6C00C7DDCC /* NoteFingeringMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFingeringMapping.swift; sourceTree = "<group>"; };
+		EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffConstants.swift; sourceTree = "<group>"; };
+		EB4D9F5E28BED47500C7DDCC /* NotesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCollection.swift; sourceTree = "<group>"; };
+		EB4D9F6028BED4AD00C7DDCC /* NoteNameMappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNameMappings.swift; sourceTree = "<group>"; };
+		EB4D9F6228BEDEC100C7DDCC /* NoteVisualizationCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVisualizationCollection.swift; sourceTree = "<group>"; };
+		EB4D9F6428BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrebleClefVisualizationMappings.swift; sourceTree = "<group>"; };
+		EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranspositionConstants.swift; sourceTree = "<group>"; };
+		EB4D9F6A28BEF0B700C7DDCC /* FingeringsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeringsCollection.swift; sourceTree = "<group>"; };
+		EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVisualization.swift; sourceTree = "<group>"; };
+		EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFingeringView.swift; sourceTree = "<group>"; };
+		EB59ED7F28D136F600FC21EA /* AssembledNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembledNoteView.swift; sourceTree = "<group>"; };
+		EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgerLineView.swift; sourceTree = "<group>"; };
+		EB59ED8328D1373000FC21EA /* WholeNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholeNoteView.swift; sourceTree = "<group>"; };
+		EB59ED8528D1376500FC21EA /* StaffLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLinesView.swift; sourceTree = "<group>"; };
+		EB59ED8728D1378000FC21EA /* NoteNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNameView.swift; sourceTree = "<group>"; };
+		EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembledStaffView.swift; sourceTree = "<group>"; };
+		EB59ED8B28D137B200FC21EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +73,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4D9F7128C14A7700C7DDCC /* AudioKit in Frameworks */,
+				EB4D9F7D28C14B4300C7DDCC /* SoundpipeAudioKit in Frameworks */,
+				EB4D9F7A28C14AE500C7DDCC /* KissFFT in Frameworks */,
+				EB4D9F7728C14AB200C7DDCC /* AudioKitUI in Frameworks */,
+				EB4D9F7428C14A9500C7DDCC /* AudioKitEX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB33204228C76C2C00364C66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB1402AA28C774880028D884 /* ClefView.swift */,
+				EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */,
+				EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */,
+				EB59ED8528D1376500FC21EA /* StaffLinesView.swift */,
+				EB59ED7F28D136F600FC21EA /* AssembledNoteView.swift */,
+				EB59ED8728D1378000FC21EA /* NoteNameView.swift */,
+				EB59ED8328D1373000FC21EA /* WholeNoteView.swift */,
+				EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */,
+				EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EB4D9F3B28BD5B5900C7DDCC = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +119,13 @@
 		EB4D9F4628BD5B5900C7DDCC /* FrenchHornApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB33204228C76C2C00364C66 /* Views */,
+				EB4D9F5528BEC66000C7DDCC /* Model */,
 				EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */,
 				EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */,
 				EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */,
 				EB4D9F4D28BD5B5B00C7DDCC /* Preview Content */,
+				EB59ED8B28D137B200FC21EA /* Extensions.swift */,
 			);
 			path = FrenchHornApp;
 			sourceTree = "<group>";
@@ -65,6 +136,48 @@
 				EB4D9F4E28BD5B5B00C7DDCC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB4D9F5528BEC66000C7DDCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB4D9F6C28BEF0CF00C7DDCC /* Base Objects and Structs */,
+				EB4D9F6928BEEB1A00C7DDCC /* Collections */,
+				EB4D9F6828BEE97D00C7DDCC /* Mappings */,
+				EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */,
+				EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB4D9F6828BEE97D00C7DDCC /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				EB4D9F5A28BECB6C00C7DDCC /* NoteFingeringMapping.swift */,
+				EB4D9F6428BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift */,
+				EB4D9F6028BED4AD00C7DDCC /* NoteNameMappings.swift */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
+		EB4D9F6928BEEB1A00C7DDCC /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				EB4D9F6228BEDEC100C7DDCC /* NoteVisualizationCollection.swift */,
+				EB4D9F5E28BED47500C7DDCC /* NotesCollection.swift */,
+				EB4D9F6A28BEF0B700C7DDCC /* FingeringsCollection.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		EB4D9F6C28BEF0CF00C7DDCC /* Base Objects and Structs */ = {
+			isa = PBXGroup;
+			children = (
+				EB4D9F5828BECB5A00C7DDCC /* NoteStruct.swift */,
+				EB4D9F5628BEC67500C7DDCC /* Fingerings.swift */,
+				EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */,
+			);
+			path = "Base Objects and Structs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +196,13 @@
 			dependencies = (
 			);
 			name = FrenchHornApp;
+			packageProductDependencies = (
+				EB4D9F7028C14A7700C7DDCC /* AudioKit */,
+				EB4D9F7328C14A9500C7DDCC /* AudioKitEX */,
+				EB4D9F7628C14AB200C7DDCC /* AudioKitUI */,
+				EB4D9F7928C14AE500C7DDCC /* KissFFT */,
+				EB4D9F7C28C14B4300C7DDCC /* SoundpipeAudioKit */,
+			);
 			productName = FrenchHornApp;
 			productReference = EB4D9F4428BD5B5900C7DDCC /* FrenchHornApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +231,13 @@
 				Base,
 			);
 			mainGroup = EB4D9F3B28BD5B5900C7DDCC;
+			packageReferences = (
+				EB4D9F6F28C14A7700C7DDCC /* XCRemoteSwiftPackageReference "AudioKit" */,
+				EB4D9F7228C14A9500C7DDCC /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				EB4D9F7528C14AB200C7DDCC /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				EB4D9F7828C14AE500C7DDCC /* XCRemoteSwiftPackageReference "KissFFT" */,
+				EB4D9F7B28C14B4300C7DDCC /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
 			productRefGroup = EB4D9F4528BD5B5900C7DDCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +264,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB59ED8C28D137B200FC21EA /* Extensions.swift in Sources */,
 				EB4D9F4A28BD5B5900C7DDCC /* ContentView.swift in Sources */,
+				EB382A1628CE669100AEF9F7 /* FingeringChartView.swift in Sources */,
+				EB4D9F6B28BEF0B700C7DDCC /* FingeringsCollection.swift in Sources */,
+				EB59ED8028D136F600FC21EA /* AssembledNoteView.swift in Sources */,
+				EB59ED8A28D1379700FC21EA /* AssembledStaffView.swift in Sources */,
+				EB4D9F5B28BECB6C00C7DDCC /* NoteFingeringMapping.swift in Sources */,
+				EB59ED8228D1370E00FC21EA /* LedgerLineView.swift in Sources */,
+				EB4D9F5D28BED38C00C7DDCC /* StaffConstants.swift in Sources */,
+				EB59ED7E28D1326100FC21EA /* IndividualFingeringView.swift in Sources */,
+				EB4D9F6528BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift in Sources */,
+				EB59ED8428D1373000FC21EA /* WholeNoteView.swift in Sources */,
+				EB59ED8828D1378000FC21EA /* NoteNameView.swift in Sources */,
+				EB4D9F5728BEC67500C7DDCC /* Fingerings.swift in Sources */,
+				EB1402AB28C774880028D884 /* ClefView.swift in Sources */,
+				EB4D9F6E28BEF17200C7DDCC /* NoteVisualization.swift in Sources */,
 				EB4D9F4828BD5B5900C7DDCC /* FrenchHornAppApp.swift in Sources */,
+				EB4D9F6728BEE85600C7DDCC /* TranspositionConstants.swift in Sources */,
+				EB4D9F5F28BED47500C7DDCC /* NotesCollection.swift in Sources */,
+				EB4D9F6328BEDEC100C7DDCC /* NoteVisualizationCollection.swift in Sources */,
+				EB59ED8628D1376500FC21EA /* StaffLinesView.swift in Sources */,
+				EB4D9F5928BECB5A00C7DDCC /* NoteStruct.swift in Sources */,
+				EB4D9F6128BED4AD00C7DDCC /* NoteNameMappings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +487,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB4D9F6F28C14A7700C7DDCC /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EB4D9F7228C14A9500C7DDCC /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		EB4D9F7528C14AB200C7DDCC /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		EB4D9F7828C14AE500C7DDCC /* XCRemoteSwiftPackageReference "KissFFT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/KissFFT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EB4D9F7B28C14B4300C7DDCC /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB4D9F7028C14A7700C7DDCC /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F6F28C14A7700C7DDCC /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		EB4D9F7328C14A9500C7DDCC /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7228C14A9500C7DDCC /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		EB4D9F7628C14AB200C7DDCC /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7528C14AB200C7DDCC /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+		EB4D9F7928C14AE500C7DDCC /* KissFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7828C14AE500C7DDCC /* XCRemoteSwiftPackageReference "KissFFT" */;
+			productName = KissFFT;
+		};
+		EB4D9F7C28C14B4300C7DDCC /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7B28C14B4300C7DDCC /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB4D9F3C28BD5B5900C7DDCC /* Project object */;
 }
