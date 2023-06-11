@@ -12,7 +12,7 @@ struct AssembledNoteView: View {
 	let noteViz: NoteVisualization!
 	init(note: Note){
 		self.note = note
-		self.noteViz = trebleClefNoteMappings[note.id]
+		self.noteViz = trebleClefNoteMappings[note]
 	}
 	var body: some View {
 		ZStack(alignment: .center) {
@@ -26,7 +26,7 @@ struct AssembledNoteView: View {
 
 struct AssembledNoteView_Previews: PreviewProvider {
 	static var previews: some View {
-		AssembledNoteView(note: BFlat4)
+		AssembledNoteView(note: A4)
 			.previewLayout(.sizeThatFits)
 			.padding()
 	}

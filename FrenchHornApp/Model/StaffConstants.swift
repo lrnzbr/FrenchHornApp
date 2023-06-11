@@ -29,6 +29,7 @@ let ledger11down = LedgerLine(offset: staffHeight * 13)
 let ledger12down = LedgerLine(offset: staffHeight * 14)
 let ledger13down = LedgerLine(offset: staffHeight * 15)
 let ledger14down = LedgerLine(offset: staffHeight * 16)
+let ledger15down = LedgerLine(offset: staffHeight * 17)
 
 let ledger1up = LedgerLine(offset: staffHeight * -3)
 let ledger2up = LedgerLine(offset: staffHeight * -4)
@@ -46,4 +47,4 @@ let ledger12up = LedgerLine(offset: staffHeight * -14)
 
 
 let upledgers = [ledger1up, ledger2up, ledger3up, ledger4up, ledger5up, ledger6up, ledger7up, ledger8up, ledger9up, ledger10up, ledger11up, ledger12up]
-let downledgers = [ledger1down, ledger2down, ledger3down, ledger4down, ledger5down, ledger6down, ledger7down, ledger8down, ledger9down, ledger10down, ledger11down, ledger12down, ledger13down, ledger14down]
+let downledgers = [ledger1down, ledger2down, ledger3down, ledger4down, ledger5down, ledger6down, ledger7down, ledger8down, ledger9down, ledger10down, ledger11down, ledger12down, ledger13down, ledger14down, ledger15down]

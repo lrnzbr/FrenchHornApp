@@ -14,12 +14,12 @@ struct NoteNameView: View {
 
 		VStack{
 			if notes.count == 1 {
-				Text(notes[0].name)
+				Text(notes[0].description)
 					.font(.headline)
 					.fontWeight(.black)
 
 			} else {
-				Text(notes[0].name + "/" + notes[1].name)
+				Text(notes[0].description + "/" + notes[1].description)
 					.font(.headline)
 					.fontWeight(.black)
 			}

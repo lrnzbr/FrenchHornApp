@@ -17,8 +17,9 @@ struct AssembledStaffView: View {
 			if notes != nil {
 				NoteNameView(notes: notes!)
 				HStack{
-					ForEach(notes!){ note in
-						AssembledNoteView(note: note)
+					AssembledNoteView(note: notes![0])
+					if notes?.count == 2 {
+						AssembledNoteView(note: notes![1])
 					}
 				}
 			}
