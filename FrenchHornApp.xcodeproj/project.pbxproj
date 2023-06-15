@@ -58,6 +58,7 @@
 		EB59ED8828D1378000FC21EA /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8728D1378000FC21EA /* NoteNameView.swift */; };
 		EB59ED8A28D1379700FC21EA /* AssembledStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */; };
 		EB59ED8C28D137B200FC21EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8B28D137B200FC21EA /* Extensions.swift */; };
+		EB6DB6072A3A76DA00734154 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		EB59ED8728D1378000FC21EA /* NoteNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNameView.swift; sourceTree = "<group>"; };
 		EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembledStaffView.swift; sourceTree = "<group>"; };
 		EB59ED8B28D137B200FC21EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				EB4D9F5528BEC66000C7DDCC /* Model */,
 				EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */,
 				EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */,
+				EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */,
 				EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */,
 				EB4D9F4D28BD5B5B00C7DDCC /* Preview Content */,
 				EB59ED8B28D137B200FC21EA /* Extensions.swift */,
@@ -343,6 +346,7 @@
 				EB1474742A356EC40048CD21 /* Accidental.swift in Sources */,
 				EB1474852A356EC40048CD21 /* Interval.swift in Sources */,
 				EB4D9F6B28BEF0B700C7DDCC /* FingeringsCollection.swift in Sources */,
+				EB6DB6072A3A76DA00734154 /* NoteDetailView.swift in Sources */,
 				EB59ED8028D136F600FC21EA /* AssembledNoteView.swift in Sources */,
 				EB1474802A356EC40048CD21 /* Chord.swift in Sources */,
 				EB14747C2A356EC40048CD21 /* NoteSet.swift in Sources */,
@@ -510,6 +514,7 @@
 				DEVELOPMENT_TEAM = L63W9QSW59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs to access to the microphone for tuning purposes\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -539,6 +544,7 @@
 				DEVELOPMENT_TEAM = L63W9QSW59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs to access to the microphone for tuning purposes\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

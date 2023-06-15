@@ -17,16 +17,27 @@ let layout = [GridItem(.adaptive(minimum: 200, maximum: 500), spacing: 4, alignm
 
 
 struct FingeringChartView: View {
+	@Namespace  var fullscreenAnimation
+	@State var isDetailScreenShown = false
+	@State var selectedNotes: [Note] = []
 	var body: some View {
-		ScrollView(){
-			Text("Double Horn Fingering Chart")
-			LazyVGrid(columns: layout, spacing: 4){
-				ForEach(availableNotes, id: \.self){ notes in
-					IndividualFingeringView(notes: notes )
+		if isDetailScreenShown {
+			NoteDetailView(notes: selectedNotes, isDetailScreenShown: $isDetailScreenShown)
+		} else {
+			ScrollView(){
+				Text("Double Horn Fingering Chart")
+				LazyVGrid(columns: layout, spacing: 4){
+					ForEach(availableNotes, id: \.self){ notes in
+						IndividualFingeringView(notes: notes ).onTapGesture {
+							selectedNotes = notes
+							isDetailScreenShown.toggle()
+						}
+					}
 				}
-			}
-		}.frame(maxHeight: .infinity)
+			}.frame(maxHeight: .infinity)
+		}
 	}
+
 }
 
 struct FingeringChartView_Previews: PreviewProvider {

@@ -47,7 +47,7 @@ let doubleHornFingerings: [Note : [DoubleHornFingering]] = [
 	C4 : [open],
 	CSharp4 : [o110],
 	DFlat4 : [o110],
-	D4 : [o110],
+	D4 : [o100],
 	DSharp4 : [o010],
 	EFlat4 : [o010],
 	E4 : [open],
