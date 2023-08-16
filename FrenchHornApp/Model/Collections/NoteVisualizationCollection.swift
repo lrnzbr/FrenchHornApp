@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-// TODO: Fix these with proper placements
 let TCC0 = TrebleClefNoteVisualization(stepsFromMidpoint: -20, ledgerLines: Array(downledgers[0...7]),  incidental: .natural)
 let TCCSharp0 = TrebleClefNoteVisualization(stepsFromMidpoint: -20, ledgerLines: Array(downledgers[0...7]), incidental: .sharp)
 let TCDFlat0 = TrebleClefNoteVisualization(stepsFromMidpoint: -19, ledgerLines: Array(downledgers[0...6]),  incidental: .flat)
@@ -118,7 +117,7 @@ let TCASharp5 =  TrebleClefNoteVisualization(stepsFromMidpoint: 6, ledgerLines: 
 let TCBFlat5 =  TrebleClefNoteVisualization(stepsFromMidpoint: 7, ledgerLines: [upledgers[0]], incidental: .flat)
 let TCB5 =  TrebleClefNoteVisualization(stepsFromMidpoint: 7, ledgerLines: [upledgers[0]], incidental: .natural)
 
-
+// TODO: Finish these placements 
 let TCC6 = TrebleClefNoteVisualization(stepsFromMidpoint: 8, ledgerLines: Array(upledgers[0...1]), incidental: .natural)
 let TCCSharp6 = TrebleClefNoteVisualization(stepsFromMidpoint: -6, incidental: .sharp)
 let TCDFlat6 = TrebleClefNoteVisualization(stepsFromMidpoint: -5, incidental: .flat)

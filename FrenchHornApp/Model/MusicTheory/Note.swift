@@ -110,6 +110,10 @@ public struct Note: Equatable, Hashable {
         return Pitch(noteNumber + Int8(keyOfF))
     }
 
+    public func pitch(_ offset: Int)-> Pitch {
+        return Pitch(noteNumber + Int8(offset))
+    }
+
     /// The way the note is described in a musical context (usually a key or scale)
     public func spelling(in key: Key) -> NoteClass {
         Note(pitch: pitch, key: key).noteClass
