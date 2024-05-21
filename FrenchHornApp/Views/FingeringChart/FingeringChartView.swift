@@ -36,6 +36,7 @@ struct FingeringChartView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
+                .frame(maxHeight: 300)
 				LazyVGrid(columns: layout, spacing: 4){
 					ForEach(availableNotes, id: \.self){ notes in
 						IndividualFingeringView(notes: notes, instrument:instrument ).onTapGesture {
