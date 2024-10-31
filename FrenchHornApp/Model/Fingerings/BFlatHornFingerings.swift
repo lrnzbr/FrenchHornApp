@@ -37,8 +37,8 @@ let SingleBFlatHornFingeringsFWritten: [Note : [Fingering]] = [
 	B3 : [o010],
 
 	C4 : [open],
-	CSharp4 : [o110],
-	DFlat4 : [o110],
+	CSharp4 : [o011],
+	DFlat4 : [o011],
 	D4 : [o110],
 	DSharp4 : [o100],
 	EFlat4 : [o100],
