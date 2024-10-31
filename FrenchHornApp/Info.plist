@@ -4,5 +4,9 @@
 <dict>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key></key>
+	<string></string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2</string>
 </dict>
 </plist>
