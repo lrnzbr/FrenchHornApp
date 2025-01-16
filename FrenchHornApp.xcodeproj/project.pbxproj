@@ -62,6 +62,7 @@
 		EB6DB6072A3A76DA00734154 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */; };
 		EB91CAC72A8D75B400602DAA /* FingeringChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC62A8D75B400602DAA /* FingeringChartViewModel.swift */; };
 		EB91CAC92A8D888900602DAA /* TunerConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC82A8D888900602DAA /* TunerConductor.swift */; };
+		EBDB74A62D39929C005C2F80 /* MetronomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB74A42D39929C005C2F80 /* MetronomeController.swift */; };
 		EBDBB4832A53A61F004D7357 /* ChooseYourHorn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4822A53A61F004D7357 /* ChooseYourHorn.swift */; };
 		EBDBB4862A53ABA0004D7357 /* InstrumentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4852A53ABA0004D7357 /* InstrumentTabView.swift */; };
 		EBDBB4882A53AE28004D7357 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4872A53AE28004D7357 /* Instrument.swift */; };
@@ -132,6 +133,7 @@
 		EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		EB91CAC62A8D75B400602DAA /* FingeringChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeringChartViewModel.swift; sourceTree = "<group>"; };
 		EB91CAC82A8D888900602DAA /* TunerConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerConductor.swift; sourceTree = "<group>"; };
+		EBDB74A42D39929C005C2F80 /* MetronomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeController.swift; sourceTree = "<group>"; };
 		EBDBB4822A53A61F004D7357 /* ChooseYourHorn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseYourHorn.swift; sourceTree = "<group>"; };
 		EBDBB4852A53ABA0004D7357 /* InstrumentTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentTabView.swift; sourceTree = "<group>"; };
 		EBDBB4872A53AE28004D7357 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		EB4D9F4628BD5B5900C7DDCC /* FrenchHornApp */ = {
 			isa = PBXGroup;
 			children = (
+				EBDB74A52D39929C005C2F80 /* Controllers */,
 				EB0360EE2A84B7DF004C27F3 /* Theme */,
 				EB499E352A844114000BA308 /* ViewModel */,
 				EB1474872A3588C30048CD21 /* Sounds */,
@@ -314,6 +317,14 @@
 				EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */,
 			);
 			path = "Base Objects and Structs";
+			sourceTree = "<group>";
+		};
+		EBDB74A52D39929C005C2F80 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBDB74A42D39929C005C2F80 /* MetronomeController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EBDBB4842A53AB77004D7357 /* ChooseYourHorn */ = {
@@ -514,6 +525,7 @@
 				EB59ED8028D136F600FC21EA /* AssembledNoteView.swift in Sources */,
 				EBF167FC2A549E48003B8A22 /* TripleHornFingerings.swift in Sources */,
 				EB1474802A356EC40048CD21 /* Chord.swift in Sources */,
+				EBDB74A62D39929C005C2F80 /* MetronomeController.swift in Sources */,
 				EBF167F22A548300003B8A22 /* PlayByEarGame.swift in Sources */,
 				EB14747C2A356EC40048CD21 /* NoteSet.swift in Sources */,
 				EB59ED8A28D1379700FC21EA /* AssembledStaffView.swift in Sources */,

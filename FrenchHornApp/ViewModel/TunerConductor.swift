@@ -13,6 +13,14 @@ import AudioToolbox
 import SoundpipeAudioKit
 import AVFoundation
 
+struct TunerData {
+    var pitch: Float = 0.0
+    var amplitude: Float = 0.0
+    var cents: Float = 0.0
+    var noteNameWithSharps = ""
+    var noteNameWithFlats = ""
+}
+
 class TunerConductor: ObservableObject {
     @Published var data = TunerData()
     @Published var micSensitivity: Float = 0.2
@@ -88,6 +96,29 @@ class TunerConductor: ObservableObject {
                 minDistance = distance
             }
         }
+        
+        // Calculate cents deviation
+        let closestNoteFrequency = Float(noteFrequencies[index])
+        var adjustedPitch = pitch
+        
+        // Adjust pitch to be in the same octave range as the closest note
+        while adjustedPitch > closestNoteFrequency * 2 {
+            adjustedPitch /= 2
+        }
+        while adjustedPitch < closestNoteFrequency / 2 {
+            adjustedPitch *= 2
+        }
+        
+        data.cents = 1200 * log2f(adjustedPitch / closestNoteFrequency)
+        
+        // Normalize cents to be between -50 and +50
+        data.cents = data.cents.remainder(dividingBy: 100)
+        if data.cents > 50 {
+            data.cents -= 100
+        } else if data.cents < -50 {
+            data.cents += 100
+        }
+        
         var octave = Int(log2f(pitch / frequency))
         if index >= noteNamesWithFlats.count - transposition {
             octave += 1
