@@ -96,11 +96,11 @@ struct NoteDetailView_Previews: PreviewProvider {
     }
 }
 
-struct TunerData {
-	var pitch: Float = 0.0
-	var amplitude: Float = 0.0
-	var noteNameWithSharps = "-"
-	var noteNameWithFlats = "-"
-}
+//struct TunerData {
+//	var pitch: Float = 0.0
+//	var amplitude: Float = 0.0
+//	var noteNameWithSharps = "-"
+//	var noteNameWithFlats = "-"
+//}
 
 
