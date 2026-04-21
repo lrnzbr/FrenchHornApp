@@ -23,7 +23,10 @@ Packages/
 
 # CocoaPods
 Pods/
-*.xcworkspace
+# Do not ignore *.xcworkspace — Xcode’s embedded project.xcworkspace must be
+# trackable so xcshareddata/swiftpm/Package.resolved can be committed (required
+# for Xcode Cloud when automatic SPM resolution is disabled). Ignore CocoaPods’
+# xcuserdata under the workspace instead (below).
 project.xcworkspace/xcuserdata
 podfile.lock
 
