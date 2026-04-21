@@ -133,6 +133,7 @@
 		EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 		EB91CAC62A8D75B400602DAA /* FingeringChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeringChartViewModel.swift; sourceTree = "<group>"; };
 		EB91CAC82A8D888900602DAA /* TunerConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerConductor.swift; sourceTree = "<group>"; };
+		EBC1DE012F202600004C2F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDB74A42D39929C005C2F80 /* MetronomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeController.swift; sourceTree = "<group>"; };
 		EBDBB4822A53A61F004D7357 /* ChooseYourHorn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseYourHorn.swift; sourceTree = "<group>"; };
 		EBDBB4852A53ABA0004D7357 /* InstrumentTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentTabView.swift; sourceTree = "<group>"; };
@@ -257,6 +258,7 @@
 				EB33204228C76C2C00364C66 /* Views */,
 				EB4D9F5528BEC66000C7DDCC /* Model */,
 				EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */,
+				EBC1DE012F202600004C2F80 /* Info.plist */,
 				EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */,
 				EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */,
 				EB4D9F4D28BD5B5B00C7DDCC /* Preview Content */,
@@ -701,11 +703,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
 				DEVELOPMENT_TEAM = L63W9QSW59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs to access to the microphone for tuning purposes\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -716,7 +718,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.FrenchHornApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -731,11 +732,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
 				DEVELOPMENT_TEAM = L63W9QSW59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs to access to the microphone for tuning purposes\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -746,7 +747,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.FrenchHornApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
