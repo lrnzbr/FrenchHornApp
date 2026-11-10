@@ -1,0 +1,21 @@
+This beta includes the redesigned practice tools, musical/audio reliability fixes,
+and two new practice improvements. Please prioritize:
+
+Tuner
+- Play a steady note, then stop. The final note, staff, cents and needle should
+  remain for about 1.5 seconds before clearing.
+- Play a different note during the hold: it should replace the previous result
+  immediately. Pause should clear the result immediately.
+- Check F/B-flat notation, flat/sharp response, background recovery, Siri, and
+  available wired/Bluetooth routes. Paused listening should remain paused.
+
+Metronome
+- Tap the tempo number to enter a whole-number tempo from 40 to 208.
+- Apply changes during playback; the pulse should continue without restarting.
+- Check invalid values and Cancel, slider/plus/minus, Tap tempo, meter and accent.
+- Relaunch after setting 96, 3/4, accent off: choices should return, with playback
+  stopped. In 6/8 each click is an eighth note.
+
+Also check fingering alternates, the reference tone's octave, and compact/large-text
+layouts. Include version/build, device/OS, horn, audio route, steps and recovery in
+any bug report. The full acceptance suite and run template are in Testing/.

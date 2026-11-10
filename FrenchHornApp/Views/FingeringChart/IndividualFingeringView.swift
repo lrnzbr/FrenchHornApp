@@ -11,46 +11,57 @@ import AVFoundation
 import SoundpipeAudioKit
 import SwiftUI
 
-class InstrumentEXSConductor: ObservableObject {
-	let engine = AudioEngine()
-	private var instrument = MIDISampler(name: "Instrument 1")
+final class InstrumentEXSConductor: ObservableObject {
+    @Published private(set) var errorMessage: String?
+    private var engine: AudioEngine?
+    private var sampler: MIDISampler?
+    private var activePitch: Pitch?
+    private let playbackClient = UUID()
 
-	func noteOn(pitch: Pitch, point _: CGPoint) {
-		instrument.play(noteNumber: MIDINoteNumber(pitch.midiNoteNumber), velocity: 90, channel: 0)
-	}
+    func noteOn(pitch: Pitch, point _: CGPoint) {
+        activePitch = pitch
+        sampler?.play(noteNumber: MIDINoteNumber(pitch.midiNoteNumber), velocity: 90, channel: 0)
+    }
 
-	func noteOff(pitch: Pitch) {
-		instrument.stop(noteNumber: MIDINoteNumber(pitch.midiNoteNumber), channel: 0)
-	}
+    func start() -> Bool {
+        stop()
+        errorMessage = nil
+        do {
+            try AudioSessionCoordinator.shared.beginPlayback(for: playbackClient)
+            let engine = AudioEngine()
+            let sampler = MIDISampler(name: "French Horn")
+            engine.output = sampler
+            self.engine = engine
+            self.sampler = sampler
+            guard let url = Bundle.main.url(forResource: "Sounds/FrenchHorn", withExtension: "aupreset") else {
+                throw NSError(domain: "ReferenceTone", code: 1)
+            }
+            try sampler.loadInstrument(url: url)
+            try engine.start()
+            guard engine.avEngine.isRunning else {
+                throw NSError(domain: "ReferenceTone", code: 2)
+            }
+            return true
+        } catch {
+            stop()
+            errorMessage = "The reference tone could not start. Check your audio output and try again."
+            return false
+        }
+    }
 
-	init() {
-		engine.output = instrument
-	}
+    func stop() {
+        if let pitch = activePitch {
+            sampler?.stop(noteNumber: MIDINoteNumber(pitch.midiNoteNumber), channel: 0)
+        }
+        activePitch = nil
+        engine?.stop()
+        engine = nil
+        sampler = nil
+        AudioSessionCoordinator.shared.endPlayback(for: playbackClient)
+    }
 
-	func start() {
-		// Load EXS file (you can also load SoundFonts and WAV files too using the AppleSampler Class)
-		do {
-			if let fileURL = Bundle.main.url(forResource: "Sounds/FrenchHorn", withExtension: "aupreset") {
-				try instrument.loadInstrument(url: fileURL)
-			} else {
-				Log("Could not find file")
-			}
-		} catch {
-			Log("Could not load instrument")
-		}
-		do {
-			try engine.start()
-		} catch {
-			Log("AudioKit did not start!")
-		}
-	}
-
-	func stop() {
-		engine.stop()
-	}
+    deinit { stop() }
 }
-
-
 
 struct IndividualFingeringView: View {
 	let notes:[Note]
@@ -68,6 +79,8 @@ struct IndividualFingeringView: View {
                     .padding()
                     .border(.black, width: 4)
                     .background(.white)
+                    // Legacy raster notation stays on paper until its own redesign pass.
+                    .foregroundColor(.black)
                 }
     }
 

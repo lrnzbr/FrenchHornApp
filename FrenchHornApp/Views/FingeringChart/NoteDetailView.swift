@@ -35,12 +35,7 @@ struct NoteDetailView: View {
                     isDetailScreenShown = false
                 }
             }.padding()
-            switch instrument.key{
-                case .F:
-                    NoteSampler(pitch: viewModel.selectedNotes[0].pitch(keyOfF))
-                case .Bflat:
-                    NoteSampler(pitch: viewModel.selectedNotes[0].pitch(keyOfBFlat))
-            }
+            NoteSampler(pitch: viewModel.selectedNotes[0].pitch(instrument.key.soundingSemitoneOffset))
             AssembledStaffView(notes: viewModel.selectedNotes)
             VStack(alignment: .leading){
             Text("Fingerings: ")
@@ -62,31 +57,21 @@ struct NoteDetailView: View {
 
 }
 struct InputDevicePicker: View {
-	@State var device: Device
+    @ObservedObject var conductor: TunerConductor
 
-	var body: some View {
-		Picker("Input: \(device.deviceID)", selection: $device) {
-			ForEach(getDevices(), id: \.self) {
-				Text($0.deviceID)
-			}
-		}
-		.pickerStyle(MenuPickerStyle())
-		.onChange(of: device, perform: setInputDevice)
-	}
-
-	func getDevices() -> [Device] {
-		AudioEngine.inputDevices.compactMap { $0 }
-	}
-
-	func setInputDevice(to device: Device) {
-		do {
-			try AudioEngine.setInputDevice(device)
-		} catch let err {
-			print(err)
-		}
-	}
+    var body: some View {
+        Picker("Microphone Input", selection: Binding(
+            get: { conductor.preferredInputID },
+            set: { conductor.selectInput($0) }
+        )) {
+            Text("System Default").tag(String?.none)
+            ForEach(conductor.inputDevices, id: \.deviceID) { device in
+                Text(conductor.inputName(device)).tag(Optional(device.deviceID))
+            }
+        }
+        .pickerStyle(MenuPickerStyle())
+    }
 }
-
 
 struct NoteDetailView_Previews: PreviewProvider {
     static var previews: some View {

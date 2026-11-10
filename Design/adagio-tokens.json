@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0-concept",
+  "name": "Adagio Studios / Studio",
+  "color": {
+    "light": {
+      "canvas": "#F5F3EC", "surface": "#FFFEFA", "surfaceMuted": "#EBEAE2",
+      "ink": "#232D28", "inkSecondary": "#616B63", "border": "#CBCFC5", "borderStrong": "#7D897E",
+      "accent": "#82601F", "accentMuted": "#EEE4CA",
+      "success": "#306247", "successMuted": "#E4EDE2",
+      "attention": "#A13E35", "attentionMuted": "#F6E6E0"
+    },
+    "dark": {
+      "canvas": "#151C18", "surface": "#202B24", "surfaceMuted": "#2B3930",
+      "ink": "#F1F3EA", "inkSecondary": "#B4C0B3", "border": "#536357", "borderStrong": "#7D9383",
+      "accent": "#DFC18A", "accentMuted": "#403B29",
+      "success": "#AED5B5", "successMuted": "#293E2E",
+      "attention": "#F5ADA3", "attentionMuted": "#482D28"
+    }
+  },
+  "space": {"xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "xxl": 32, "hero": 48},
+  "radius": {"control": 12, "panel": 20, "pill": 999},
+  "type": {
+    "family": "System / SF Pro on iOS",
+    "wordmark": "System serif / New York on iOS",
+    "screenTitle": {"size": 32, "weight": 600, "swiftUI": "largeTitle"},
+    "sectionTitle": {"size": 20, "weight": 600, "swiftUI": "title3"},
+    "body": {"size": 17, "weight": 400, "swiftUI": "body"},
+    "support": {"size": 15, "weight": 400, "swiftUI": "subheadline"},
+    "label": {"size": 13, "weight": 500, "swiftUI": "footnote"},
+    "measurement": {"size": 88, "weight": 500, "digits": "tabular", "scalesWith": "largeTitle"}
+  },
+  "interaction": {"minimumTarget": 44, "primaryHeight": 54, "motionMilliseconds": 160},
+  "invariants": ["Written and sounding pitch are separately labeled", "State has text as well as color", "Instrument identity never determines tuning status color", "Live audio measurement overrides decorative motion"]
+}

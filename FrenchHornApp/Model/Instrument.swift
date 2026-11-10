@@ -10,6 +10,14 @@ import Foundation
 enum InstrumentKey {
 	case F
 	case Bflat
+
+    /// Add this offset to a written MIDI note to obtain its sounding pitch.
+    var soundingSemitoneOffset: Int {
+        switch self {
+        case .F: return keyOfF
+        case .Bflat: return keyOfBFlat
+        }
+    }
 }
 
 struct Instrument: Hashable {
@@ -69,8 +77,8 @@ private let instrument3 = Instrument(id: 3, name: "Triple Horn in F/B♭/F", key
 private let instrument4 = Instrument(id: 4, name: "Single Horn in B♭ (Music Written in F)", key: .F, imageName: "SingleHornBFlat", availableNotes: availableNotesBFlatHorn, fingerings: SingleBFlatHornFingeringsFWritten, hasPistons: false, hasTrigger1: true, hasTrigger2: false, instrumentGuideImage: "BFlatHornGuide", handImage: "left_hand_trigger")
 private let instrument5 = Instrument(id: 5, name: "Single Horn in B♭ (Music Written in B♭)", key: .Bflat, imageName: "SingleHornBFlat", availableNotes: availableNotesBFlatHorn, fingerings: SingleBFlatHornFingeringsBFlatWritten, hasPistons: false, hasTrigger1: true, hasTrigger2: false, instrumentGuideImage: "BFlatHornGuide", handImage: "left_hand_trigger")
 private let instrument6 = Instrument(id: 6, name: "Marching Mellophone in F", key: .F, imageName: "MarchingMellophoneInF", availableNotes: availableNotesMellophone, fingerings: mellophoneInFFingerings, hasPistons: true, hasTrigger1: false, hasTrigger2: false, instrumentGuideImage: "MellophoneGuide", handImage: "right_hand")
-private let instrument7 = Instrument(id: 7, name: "Marching Horn in B♭ (Music Written in B♭)", key: .Bflat, imageName: "MarchingHornBb", availableNotes: availableNotesMarchingHorn, fingerings: SingleBFlatHornFingeringsFWritten ,hasPistons: true, hasTrigger1: false, hasTrigger2: false, instrumentGuideImage: "MellophoneGuide", handImage: "right_hand")
-private let instrument8 = Instrument(id: 8, name: "Marching Horn in B♭ (Music Written in F)", key: .F, imageName: "MarchingHornBb", availableNotes: availableNotesMarchingHorn, fingerings: SingleBFlatHornFingeringsBFlatWritten, hasPistons: true, hasTrigger1: false, hasTrigger2: false, instrumentGuideImage: "MellophoneGuide", handImage: "right_hand")
+private let instrument7 = Instrument(id: 7, name: "Marching Horn in B♭ (Music Written in B♭)", key: .Bflat, imageName: "MarchingHornBb", availableNotes: availableNotesMarchingHorn, fingerings: SingleBFlatHornFingeringsBFlatWritten, hasPistons: true, hasTrigger1: false, hasTrigger2: false, instrumentGuideImage: "MellophoneGuide", handImage: "right_hand")
+private let instrument8 = Instrument(id: 8, name: "Marching Horn in B♭ (Music Written in F)", key: .F, imageName: "MarchingHornBb", availableNotes: availableNotesMarchingHorn, fingerings: SingleBFlatHornFingeringsFWritten, hasPistons: true, hasTrigger1: false, hasTrigger2: false, instrumentGuideImage: "MellophoneGuide", handImage: "right_hand")
 
 
 let instruments = [instrument1, instrument2, instrument3, instrument4, instrument5, instrument6, instrument7, instrument8]

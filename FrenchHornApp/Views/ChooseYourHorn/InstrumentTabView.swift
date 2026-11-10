@@ -22,7 +22,7 @@ struct InstrumentTabView: View {
 				.cornerRadius(20)
 
 			Text(instrument.name)
-		}.frame(height: 80)
+		}.frame(minHeight: 80)
 			
     }
 }

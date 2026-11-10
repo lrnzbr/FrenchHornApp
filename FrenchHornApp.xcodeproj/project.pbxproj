@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0000000000000000000192 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000191 /* PrivacyInfo.xcprivacy */; };
+		AD0000000000000000000172 /* TunerDisplayHold.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000171 /* TunerDisplayHold.swift */; };
+		AD0000000000000000000182 /* MetronomePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000181 /* MetronomePreferences.swift */; };
+		AD0000000000000000000162 /* TapTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000161 /* TapTempo.swift */; };
+		AD0000000000000000000142 /* TunerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000141 /* TunerPresentation.swift */; };
+		AD0000000000000000000152 /* TuningMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000151 /* TuningMeter.swift */; };
+		AD0000000000000000000102 /* FingeringSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000101 /* FingeringSelection.swift */; };
+		AD0000000000000000000112 /* StaffPreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000111 /* StaffPreviewLayout.swift */; };
+		AD0000000000000000000122 /* StaffPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000121 /* StaffPreview.swift */; };
+		AD0000000000000000000132 /* FingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000131 /* FingeringRow.swift */; };
+		AD1000000000000000000003 /* StudioNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1000000000000000000002 /* StudioNavigationTests.swift */; };
+		AD0000000000000000000072 /* AdagioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000071 /* AdagioTheme.swift */; };
+		AD0000000000000000000082 /* AdagioComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000081 /* AdagioComponents.swift */; };
+		AD0000000000000000000092 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000091 /* MetronomeView.swift */; };
+		AD0000000000000000000062 /* MetronomeAudioRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000061 /* MetronomeAudioRenderer.swift */; };
+		AD0000000000000000000052 /* MetronomeTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000051 /* MetronomeTiming.swift */; };
+		AD0000000000000000000042 /* AudioPlaybackLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000041 /* AudioPlaybackLifecycle.swift */; };
+		AD0000000000000000000032 /* MicrophoneStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000031 /* MicrophoneStatusView.swift */; };
+		AD0000000000000000000022 /* AudioSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000021 /* AudioSessionCoordinator.swift */; };
+		AD0000000000000000000012 /* MicrophoneRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000011 /* MicrophoneRecovery.swift */; };
+		AD0000000000000000000002 /* TunerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* TunerReading.swift */; };
 		EB0360F02A84B7E9004C27F3 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0360EF2A84B7E9004C27F3 /* AppFont.swift */; };
 		EB1402AB28C774880028D884 /* ClefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1402AA28C774880028D884 /* ClefView.swift */; };
 		EB1474742A356EC40048CD21 /* Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474612A356EC30048CD21 /* Accidental.swift */; };
@@ -81,7 +102,33 @@
 		EBF167FC2A549E48003B8A22 /* TripleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167FB2A549E48003B8A22 /* TripleHornFingerings.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AD100000000000000000000C = {isa = PBXContainerItemProxy; containerPortal = EB4D9F3C28BD5B5900C7DDCC; proxyType = 1; remoteGlobalIDString = EB4D9F4328BD5B5900C7DDCC; remoteInfo = FrenchHornApp; };
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		AD0000000000000000000191 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AD0000000000000000000171 /* TunerDisplayHold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerDisplayHold.swift; sourceTree = "<group>"; };
+		AD0000000000000000000181 /* MetronomePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomePreferences.swift; sourceTree = "<group>"; };
+		AD0000000000000000000161 /* TapTempo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapTempo.swift; sourceTree = "<group>"; };
+		AD0000000000000000000141 /* TunerPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerPresentation.swift; sourceTree = "<group>"; };
+		AD0000000000000000000151 /* TuningMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuningMeter.swift; sourceTree = "<group>"; };
+		AD0000000000000000000101 /* FingeringSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeringSelection.swift; sourceTree = "<group>"; };
+		AD0000000000000000000111 /* StaffPreviewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffPreviewLayout.swift; sourceTree = "<group>"; };
+		AD0000000000000000000121 /* StaffPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffPreview.swift; sourceTree = "<group>"; };
+		AD0000000000000000000131 /* FingeringRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingeringRow.swift; sourceTree = "<group>"; };
+		AD1000000000000000000002 /* StudioNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioNavigationTests.swift; sourceTree = "<group>"; };
+		AD1000000000000000000004 /* FrenchHornAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrenchHornAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0000000000000000000071 /* AdagioTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdagioTheme.swift; sourceTree = "<group>"; };
+		AD0000000000000000000081 /* AdagioComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdagioComponents.swift; sourceTree = "<group>"; };
+		AD0000000000000000000091 /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
+		AD0000000000000000000061 /* MetronomeAudioRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeAudioRenderer.swift; sourceTree = "<group>"; };
+		AD0000000000000000000051 /* MetronomeTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeTiming.swift; sourceTree = "<group>"; };
+		AD0000000000000000000041 /* AudioPlaybackLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaybackLifecycle.swift; sourceTree = "<group>"; };
+		AD0000000000000000000031 /* MicrophoneStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneStatusView.swift; sourceTree = "<group>"; };
+		AD0000000000000000000021 /* AudioSessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionCoordinator.swift; sourceTree = "<group>"; };
+		AD0000000000000000000011 /* MicrophoneRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophoneRecovery.swift; sourceTree = "<group>"; };
+		AD0000000000000000000001 /* TunerReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerReading.swift; sourceTree = "<group>"; };
 		EB0360EF2A84B7E9004C27F3 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		EB1402AA28C774880028D884 /* ClefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClefView.swift; sourceTree = "<group>"; };
 		EB1474612A356EC30048CD21 /* Accidental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Accidental.swift; sourceTree = "<group>"; };
@@ -154,6 +201,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD1000000000000000000007 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 		EB4D9F4128BD5B5900C7DDCC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,10 +217,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD1000000000000000000005 /* FrenchHornAppUITests */ = {isa = PBXGroup; children = (AD1000000000000000000002 /* StudioNavigationTests.swift */,); path = FrenchHornAppUITests; sourceTree = "<group>"; };
+		AD0000000000000000000093 /* Metronome */ = {
+			isa = PBXGroup;
+			children = (
+				AD0000000000000000000091 /* MetronomeView.swift */,
+			);
+			path = Metronome;
+			sourceTree = "<group>";
+		};
 		EB0360EE2A84B7DF004C27F3 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
 				EB0360EF2A84B7E9004C27F3 /* AppFont.swift */,
+				AD0000000000000000000071 /* AdagioTheme.swift */,
+				AD0000000000000000000081 /* AdagioComponents.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -215,6 +274,7 @@
 				EBDBB48E2A53B6E2004D7357 /* Resources */,
 				EBDBB48D2A53B532004D7357 /* Transposer */,
 				EBDBB48C2A53B52C004D7357 /* Tuner */,
+				AD0000000000000000000093 /* Metronome */,
 				EBDBB48B2A53B524004D7357 /* MainMenu */,
 				EBDBB4842A53AB77004D7357 /* ChooseYourHorn */,
 				EBDBB4912A53B6F6004D7357 /* Components */,
@@ -236,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4D9F4628BD5B5900C7DDCC /* FrenchHornApp */,
+				AD1000000000000000000005 /* FrenchHornAppUITests */,
 				EB4D9F4528BD5B5900C7DDCC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -244,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4D9F4428BD5B5900C7DDCC /* FrenchHornApp.app */,
+				AD1000000000000000000004 /* FrenchHornAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,6 +321,7 @@
 				EB4D9F5528BEC66000C7DDCC /* Model */,
 				EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */,
 				EBC1DE012F202600004C2F80 /* Info.plist */,
+				AD0000000000000000000191 /* PrivacyInfo.xcprivacy */,
 				EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */,
 				EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */,
 				EB4D9F4D28BD5B5B00C7DDCC /* Preview Content */,
@@ -285,6 +348,16 @@
 				EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */,
 				EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */,
 				EBDBB4872A53AE28004D7357 /* Instrument.swift */,
+				AD0000000000000000000001 /* TunerReading.swift */,
+				AD0000000000000000000101 /* FingeringSelection.swift */,
+				AD0000000000000000000141 /* TunerPresentation.swift */,
+				AD0000000000000000000171 /* TunerDisplayHold.swift */,
+				AD0000000000000000000181 /* MetronomePreferences.swift */,
+				AD0000000000000000000161 /* TapTempo.swift */,
+				AD0000000000000000000111 /* StaffPreviewLayout.swift */,
+				AD0000000000000000000011 /* MicrophoneRecovery.swift */,
+				AD0000000000000000000061 /* MetronomeAudioRenderer.swift */,
+				AD0000000000000000000051 /* MetronomeTiming.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				EBDB74A42D39929C005C2F80 /* MetronomeController.swift */,
+				AD0000000000000000000021 /* AudioSessionCoordinator.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				EBDBB4932A53B766004D7357 /* TunerView.swift */,
+				AD0000000000000000000151 /* TuningMeter.swift */,
 			);
 			path = Tuner;
 			sourceTree = "<group>";
@@ -389,6 +464,8 @@
 		EBDBB4912A53B6F6004D7357 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				AD0000000000000000000041 /* AudioPlaybackLifecycle.swift */,
+				AD0000000000000000000031 /* MicrophoneStatusView.swift */,
 				EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */,
 				EB59ED8328D1373000FC21EA /* WholeNoteView.swift */,
 				EB59ED8728D1378000FC21EA /* NoteNameView.swift */,
@@ -408,6 +485,8 @@
 				EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */,
 				EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */,
 				EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */,
+				AD0000000000000000000121 /* StaffPreview.swift */,
+				AD0000000000000000000131 /* FingeringRow.swift */,
 			);
 			path = FingeringChart;
 			sourceTree = "<group>";
@@ -431,6 +510,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD1000000000000000000001 /* FrenchHornAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1000000000000000000009;
+			buildPhases = (AD1000000000000000000006, AD1000000000000000000007, AD1000000000000000000008,);
+			buildRules = ();
+			dependencies = (AD100000000000000000000D,);
+			name = FrenchHornAppUITests;
+			productName = FrenchHornAppUITests;
+			productReference = AD1000000000000000000004;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		EB4D9F4328BD5B5900C7DDCC /* FrenchHornApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB4D9F5228BD5B5B00C7DDCC /* Build configuration list for PBXNativeTarget "FrenchHornApp" */;
@@ -465,6 +555,7 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					AD1000000000000000000001 = {CreatedOnToolsVersion = 27.0; TestTargetID = EB4D9F4328BD5B5900C7DDCC; };
 					EB4D9F4328BD5B5900C7DDCC = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -491,16 +582,19 @@
 			projectRoot = "";
 			targets = (
 				EB4D9F4328BD5B5900C7DDCC /* FrenchHornApp */,
+				AD1000000000000000000001 /* FrenchHornAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD1000000000000000000008 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 		EB4D9F4228BD5B5900C7DDCC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EB4D9F4F28BD5B5B00C7DDCC /* Preview Assets.xcassets in Resources */,
+				AD0000000000000000000192 /* PrivacyInfo.xcprivacy in Resources */,
 				EB1474882A3588C30048CD21 /* Sounds in Resources */,
 				EB4D9F4C28BD5B5B00C7DDCC /* Assets.xcassets in Resources */,
 			);
@@ -509,6 +603,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD1000000000000000000006 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (AD1000000000000000000003 /* StudioNavigationTests.swift in Sources */,); runOnlyForDeploymentPostprocessing = 0; };
 		EB4D9F4028BD5B5900C7DDCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,6 +648,25 @@
 				EB14747A2A356EC40048CD21 /* Note.swift in Sources */,
 				EBF167F42A549DE8003B8A22 /* SingleHornInFFinggerings.swift in Sources */,
 				EB4D9F6E28BEF17200C7DDCC /* NoteVisualization.swift in Sources */,
+				AD0000000000000000000002 /* TunerReading.swift in Sources */,
+				AD0000000000000000000042 /* AudioPlaybackLifecycle.swift in Sources */,
+				AD0000000000000000000032 /* MicrophoneStatusView.swift in Sources */,
+				AD0000000000000000000022 /* AudioSessionCoordinator.swift in Sources */,
+				AD0000000000000000000012 /* MicrophoneRecovery.swift in Sources */,
+				AD0000000000000000000062 /* MetronomeAudioRenderer.swift in Sources */,
+				AD0000000000000000000072 /* AdagioTheme.swift in Sources */,
+				AD0000000000000000000102 /* FingeringSelection.swift in Sources */,
+				AD0000000000000000000142 /* TunerPresentation.swift in Sources */,
+				AD0000000000000000000172 /* TunerDisplayHold.swift in Sources */,
+				AD0000000000000000000182 /* MetronomePreferences.swift in Sources */,
+				AD0000000000000000000162 /* TapTempo.swift in Sources */,
+				AD0000000000000000000152 /* TuningMeter.swift in Sources */,
+				AD0000000000000000000112 /* StaffPreviewLayout.swift in Sources */,
+				AD0000000000000000000122 /* StaffPreview.swift in Sources */,
+				AD0000000000000000000132 /* FingeringRow.swift in Sources */,
+				AD0000000000000000000082 /* AdagioComponents.swift in Sources */,
+				AD0000000000000000000092 /* MetronomeView.swift in Sources */,
+				AD0000000000000000000052 /* MetronomeTiming.swift in Sources */,
 				EB4D9F4828BD5B5900C7DDCC /* FrenchHornAppApp.swift in Sources */,
 				EB14747E2A356EC40048CD21 /* Scale.swift in Sources */,
 				EB4D9F6728BEE85600C7DDCC /* TranspositionConstants.swift in Sources */,
@@ -582,7 +696,41 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD100000000000000000000D = {isa = PBXTargetDependency; target = EB4D9F4328BD5B5900C7DDCC; targetProxy = AD100000000000000000000C; };
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		AD100000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.FrenchHornAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrenchHornApp;
+			};
+			name = Debug;
+		};
+		AD100000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@loader_path/Frameworks",);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.FrenchHornAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrenchHornApp;
+			};
+			name = Release;
+		};
 		EB4D9F5028BD5B5B00C7DDCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -709,8 +857,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FrenchHornApp/Info.plist;
-				MARKETING_VERSION = 1.0;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs to access to the microphone for tuning purposes\"";
+				MARKETING_VERSION = 1.3.0;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -740,8 +888,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FrenchHornApp/Info.plist;
-				MARKETING_VERSION = 1.0;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"This app needs to access to the microphone for tuning purposes\"";
+				MARKETING_VERSION = 1.3.0;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -762,6 +910,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD1000000000000000000009 /* UI test configurations */ = {isa = XCConfigurationList; buildConfigurations = (AD100000000000000000000A, AD100000000000000000000B,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
 		EB4D9F3F28BD5B5900C7DDCC /* Build configuration list for PBXProject "FrenchHornApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,126 +1,102 @@
 import Foundation
+import Combine
 import AVFoundation
 
-class MetronomeController: ObservableObject {
-    @Published var bpm: Double = 120
-    @Published var timeSignature: String = "4/4"
-    @Published var accentFirstBeat: Bool = true
-    @Published var isPlaying: Bool = false
-    
-    private var timer: Timer?
-    private var currentBeat: Int = 0
-    private var regularBeatSound: AVAudioPlayer?
-    private var accentedBeatSound: AVAudioPlayer?
-    
-    init() {
-        setupSounds()
+private final class NativeMetronomeOutput: MetronomeOutput {
+    private let playbackClient = UUID()
+    private var engine: AVAudioEngine?
+    private var renderer: MetronomeAudioRenderer?
+    private var configurationObserver: NSObjectProtocol?
+
+    func start(settings: MetronomeSettings, failure: @escaping (String) -> Void) throws {
+        stop()
+        do {
+            try AudioSessionCoordinator.shared.beginPlayback(for: playbackClient)
+            let engine = AVAudioEngine()
+            let sampleRate = engine.outputNode.inputFormat(forBus: 0).sampleRate
+            guard let renderer = MetronomeAudioRenderer(sampleRate: sampleRate, settings: settings) else {
+                throw NSError(domain: "MetronomeOutput", code: 1)
+            }
+            let source = renderer.makeSourceNode()
+            engine.attach(source)
+            engine.connect(source, to: engine.mainMixerNode, format: renderer.format)
+            self.engine = engine
+            self.renderer = renderer
+            engine.prepare()
+            try engine.start()
+            guard engine.isRunning else { throw NSError(domain: "MetronomeOutput", code: 2) }
+            configurationObserver = NotificationCenter.default.addObserver(
+                forName: .AVAudioEngineConfigurationChange, object: engine, queue: .main
+            ) { [weak self, weak engine] _ in
+                guard let self = self, let engine = engine, self.engine === engine, !engine.isRunning else { return }
+                failure("Audio output changed. Tap Play to restart the metronome.")
+            }
+        } catch {
+            stop()
+            throw error
+        }
     }
-    
-    private func setupSounds() {
-        if let regularPath = Bundle.main.path(forResource: "regularBeat", ofType: "mp3") {
-            regularBeatSound = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: regularPath))
-            regularBeatSound?.prepareToPlay()
-        } else if let data = Self.syntheticClickWAV(accent: false) {
-            regularBeatSound = try? AVAudioPlayer(data: data, fileTypeHint: AVFileType.wav.rawValue)
-            regularBeatSound?.prepareToPlay()
-        }
-        
-        if let accentedPath = Bundle.main.path(forResource: "accentedBeat", ofType: "mp3") {
-            accentedBeatSound = try? AVAudioPlayer(contentsOf: URL(fileURLWithPath: accentedPath))
-            accentedBeatSound?.prepareToPlay()
-        } else if let data = Self.syntheticClickWAV(accent: true) {
-            accentedBeatSound = try? AVAudioPlayer(data: data, fileTypeHint: AVFileType.wav.rawValue)
-            accentedBeatSound?.prepareToPlay()
-        }
-        
-        #if DEBUG
-        if regularBeatSound == nil || accentedBeatSound == nil {
-            print("MetronomeController: failed to load beat sounds (bundle MP3s missing and synthetic fallback failed).")
-        }
-        #endif
-    }
-    
-    func start() {
-        isPlaying = true
-        currentBeat = 0
-        
-        let timeInterval = 60.0 / bpm
-        playBeat()
-        
-        let t = Timer(timeInterval: timeInterval, repeats: true) { [weak self] _ in
-            self?.playBeat()
-        }
-        RunLoop.main.add(t, forMode: .common)
-        timer = t
-    }
-    
+
+    func update(settings: MetronomeSettings) { renderer?.update(settings: settings) }
+
     func stop() {
-        isPlaying = false
-        timer?.invalidate()
-        timer = nil
+        if let observer = configurationObserver { NotificationCenter.default.removeObserver(observer) }
+        configurationObserver = nil
+        engine?.stop()
+        engine = nil
+        renderer = nil
+        AudioSessionCoordinator.shared.endPlayback(for: playbackClient)
     }
-    
-    private func playBeat() {
-        let beatsInMeasure = Int(timeSignature.split(separator: "/")[0]) ?? 4
-        
-        if currentBeat == 0 && accentFirstBeat {
-            accentedBeatSound?.play()
-        } else {
-            regularBeatSound?.play()
-        }
-        
-        currentBeat = (currentBeat + 1) % beatsInMeasure
-    }
-    
-    /// Short sine burst as WAV data when `regularBeat.mp3` / `accentedBeat.mp3` are not in the app bundle.
-    private static func syntheticClickWAV(accent: Bool) -> Data? {
-        let sampleRate = 44_100.0
-        let frequency = accent ? 1_200.0 : 880.0
-        let duration = accent ? 0.055 : 0.038
-        let sampleCount = Int(sampleRate * duration)
-        guard sampleCount > 0 else { return nil }
-        
-        var samples = [Int16](repeating: 0, count: sampleCount)
-        for i in 0..<sampleCount {
-            let t = Double(i) / sampleRate
-            let envelope = exp(-t * (accent ? 48.0 : 62.0))
-            let s = sin(2.0 * Double.pi * frequency * t) * envelope * 0.88
-            samples[i] = Int16(max(-32_767, min(32_767, s * 32_767.0)))
-        }
-        return pcmMono16WAVData(samples: samples, sampleRate: UInt32(sampleRate))
-    }
-    
-    private static func pcmMono16WAVData(samples: [Int16], sampleRate: UInt32) -> Data? {
-        let numChannels: UInt16 = 1
-        let bitsPerSample: UInt16 = 16
-        let byteRate = sampleRate * UInt32(numChannels) * UInt32(bitsPerSample / 8)
-        let blockAlign = numChannels * (bitsPerSample / 8)
-        let dataSize = UInt32(samples.count * MemoryLayout<Int16>.size)
-        let riffChunkSize = 36 + dataSize
-        
-        var data = Data()
-        data.append(contentsOf: "RIFF".utf8)
-        data.append(contentsOf: riffChunkSize.leBytes)
-        data.append(contentsOf: "WAVE".utf8)
-        data.append(contentsOf: "fmt ".utf8)
-        data.append(contentsOf: UInt32(16).leBytes)
-        data.append(contentsOf: UInt16(1).leBytes)
-        data.append(contentsOf: numChannels.leBytes)
-        data.append(contentsOf: sampleRate.leBytes)
-        data.append(contentsOf: byteRate.leBytes)
-        data.append(contentsOf: blockAlign.leBytes)
-        data.append(contentsOf: bitsPerSample.leBytes)
-        data.append(contentsOf: "data".utf8)
-        data.append(contentsOf: dataSize.leBytes)
-        for s in samples {
-            data.append(contentsOf: s.littleEndian.leBytes)
-        }
-        return data
-    }
+
+    deinit { stop() }
 }
 
-private extension FixedWidthInteger {
-    var leBytes: [UInt8] {
-        withUnsafeBytes(of: littleEndian) { Array($0) }
+final class MetronomeController: ObservableObject {
+    @Published var bpm: Double { didSet { settingsChanged() } }
+    @Published var meter: MetronomeMeter { didSet { settingsChanged() } }
+    @Published var accentFirstBeat: Bool { didSet { settingsChanged() } }
+    @Published private(set) var isPlaying = false
+    @Published private(set) var errorMessage: String?
+    private let playback = MetronomePlayback(output: NativeMetronomeOutput())
+    private let preferences: MetronomePreferences
+
+    init(preferences: MetronomePreferences = MetronomePreferences()) {
+        self.preferences = preferences
+        let restored = preferences.load()
+        bpm = restored.bpm
+        meter = restored.meter
+        accentFirstBeat = restored.accentFirstBeat
+        playback.onStateChange = { [weak self] state in
+            guard let self = self else { return }
+            self.isPlaying = state == .playing
+            if case .failed(let message) = state { self.errorMessage = message }
+            else { self.errorMessage = nil }
+        }
     }
+
+    private var settings: MetronomeSettings? {
+        MetronomeSettings(bpm: bpm, meter: meter, accentFirstBeat: accentFirstBeat)
+    }
+
+    private func settingsChanged() {
+        guard let settings = settings else {
+            stop()
+            errorMessage = "Choose a tempo between 40 and 208 BPM."
+            return
+        }
+        errorMessage = nil
+        playback.update(settings: settings)
+        preferences.save(settings)
+    }
+
+    func start() {
+        guard let settings = settings else {
+            errorMessage = "Choose a tempo between 40 and 208 BPM."
+            return
+        }
+        playback.start(settings: settings)
+    }
+
+    func stop() { playback.stop() }
+    deinit { playback.stop() }
 }

@@ -174,6 +174,7 @@ let trebleClefNoteMappings: [Note : TrebleClefNoteVisualization] = [
 	AFlat8 : TCAFlat8,
 	A8 : TCA8,
 	ASharp8 : TCASharp8,
-	BFlat8 : TCBFlat8
+	BFlat8 : TCBFlat8,
+    B8 : TCB8
 
 ]

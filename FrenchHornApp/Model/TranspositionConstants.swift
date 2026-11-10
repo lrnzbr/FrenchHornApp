@@ -8,5 +8,5 @@
 import Foundation
 
 let keyOfF = -7
-let keyOfBFlat = -3
+let keyOfBFlat = -2
 let keyOfEFlat = -9

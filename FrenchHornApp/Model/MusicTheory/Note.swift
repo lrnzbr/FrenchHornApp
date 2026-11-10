@@ -1,7 +1,6 @@
 import Foundation
 func calculateFrequency(stepsAwayFromBaseFrequency:Int, baseFrequency:Double = 440 )->Double {
-	let A = Double(pow(2, 0.8333333333))
-	return baseFrequency * pow(A,Double(stepsAwayFromBaseFrequency))
+    baseFrequency * pow(2, Double(stepsAwayFromBaseFrequency) / 12)
 }
 /// A pitch with a particular spelling.
 public struct Note: Equatable, Hashable {
@@ -31,13 +30,13 @@ public struct Note: Equatable, Hashable {
     /// Convenience accessor for the accidental of the note
     public var accidental: Accidental { noteClass.accidental }
 
-    /// Range from -1 to 7
+    /// Scientific pitch octave; middle C is C4 and A4 is MIDI 69.
     public var octave: Int = 4
 
     /// Initialize the note
     ///
-    /// Note that the octave ranges from C to C so a Cb4 is
-    /// eleven semitones above C4 or one semitone below a C5
+    /// Accidentals can cross octave boundaries: C♭4 sounds as B3,
+    /// and B♯4 sounds as C5.
     /// - Parameters:
     ///   - letter: Letter of the note
     ///   - accidental: Accidental shift
@@ -97,17 +96,12 @@ public struct Note: Equatable, Hashable {
 
     /// MIDI Note 0-127 starting at C
     public var noteNumber: Int8 {
-        let octaveBounds = ((octave + 1) * 12) ... ((octave + 2) * 12)
-        var note = Int(noteClass.letter.baseNote) + Int(noteClass.accidental.rawValue)
-        while !octaveBounds.contains(note) {
-            note += 12
-        }
-        return Int8(note)
+        Int8((octave + 1) * 12 + Int(letter.baseNote) + Int(accidental.rawValue))
     }
 
-    /// The pitch for the note
+    /// The pitch represented by this spelling, before instrument transposition.
     public var pitch: Pitch {
-        return Pitch(noteNumber + Int8(keyOfF))
+        Pitch(noteNumber)
     }
 
     public func pitch(_ offset: Int)-> Pitch {

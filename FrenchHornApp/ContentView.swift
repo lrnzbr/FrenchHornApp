@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("adagio.appearance") private var appearanceID = AdagioAppearance.system.rawValue
+
     var body: some View {
-		SplashScreen()
+        ChooseYourHorn()
+            .tint(AdagioTheme.Colors.accent)
+            .foregroundColor(AdagioTheme.Colors.ink)
+            .preferredColorScheme((AdagioAppearance(rawValue: appearanceID) ?? .system).colorScheme)
     }
 }
 
