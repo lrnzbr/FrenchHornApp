@@ -1,13 +1,14 @@
 import SwiftUI
 
 private enum PracticeTool: String, CaseIterable {
-    case fingerings, tuner, metronome
+    case fingerings, tuner, metronome, ear
 
     var title: String {
         switch self {
         case .fingerings: return "Fingerings"
         case .tuner: return "Tuner"
         case .metronome: return "Metronome"
+        case .ear: return "Ear"
         }
     }
 
@@ -16,6 +17,7 @@ private enum PracticeTool: String, CaseIterable {
         case .fingerings: return "music.note.list"
         case .tuner: return "tuningfork"
         case .metronome: return "metronome"
+        case .ear: return "ear"
         }
     }
 }
@@ -41,6 +43,10 @@ struct MainMenu: View {
             }
             destination(.metronome) {
                 MetronomeView(isActive: selectedTool == .metronome && !showingSettings)
+            }
+            destination(.ear) {
+                EarTrainingView(instrument: currentInstrument,
+                                isActive: selectedTool == .ear && !showingSettings)
             }
         }
         .sheet(isPresented: $showingSettings) {
