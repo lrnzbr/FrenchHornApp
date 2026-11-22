@@ -95,9 +95,9 @@ let tripleHornFingerings: [Note : [Fingering]] = [
 	   B4 : [t010, o010, f010],
 
 	   C5 : [t000, open, f000],
-  CSharp5 : [t011, o110, o010, f110, f111],
-   DFlat5 : [t011, o110, o010, f110, f111],
-	   D5 : [t110, o110, o010, f100, f111],
+  CSharp5 : [t011, o010, o110, f110, f111],
+   DFlat5 : [t011, o010, o110, f110, f111],
+	   D5 : [t110, open, f100, f111],
   DSharp5 : [t100, o010, t011, f010, f101],
    EFlat5 : [t100, o010, t011, f010, f101],
 	   E5 : [f110, f000, t010, open],

@@ -169,6 +169,8 @@ on-device installation is not yet verified. See the
 
 ## UI design study
 
+The [Figma design handoff](Design/FIGMA_HANDOFF.md) links the shared, editable design source for the horn core tools and records the design-to-code workflow and current release scope.
+
 The [Adagio Studios design study](Design/DESIGN.md) documents Mobbin research,
 shared visual tokens, component contracts, accessibility requirements and the
 incremental SwiftUI migration. Open [the interactive prototype](Design/index.html)
