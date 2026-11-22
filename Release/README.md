@@ -118,6 +118,47 @@ the older development install as a beta installation or acceptance result. The
 owner must accept the invitation in TestFlight and install version 1.3.0 (1) on
 the iPad before starting the beta checklist.
 
+### Release preparation follow-up · 12 November 2026
+
+App Store Connect still lists **Adagio iPad Testing** with one tester and build
+**1.3.0 (1)** in **Testing** status. The owner's `lrnzbr@gmail.com` tester status
+remains **Invited**. At the owner's request, the existing tester was selected and
+App Store Connect's **Reinvite** action was submitted. The confirmation dialog
+closed; email delivery, invitation acceptance, and physical installation have
+not been verified.
+
+The Swift package suite passed with **76 tests and 0 failures** using normal
+macOS CoreAudio access. The `FrenchHornApp-UI` suite passed on the dedicated
+iOS 27.0 Adagio review simulator with **11 tests and 0 failures**. These checks
+do not substitute for the physical TestFlight acceptance run below.
+
+### Physical installation confirmed · 12 November 2026
+
+App Store Connect now shows the owner tester as **Installed 1.3.0 (1)** on an
+**iPhone Duo running iOS 27.3**, dated 12 November 2026. This confirms beta
+installation, not completion of the physical acceptance suite. The iPad run and
+the documented audio, permission, accessibility, and musical checks remain open.
+
+### App Store submission draft · 12 November 2026
+
+The public App Store version is still **1.2.1**. A new **1.3.0** version draft was
+created in App Store Connect with status **Prepare for Submission**. The draft
+has **build 1.3.0 (1)** attached, matching the installed TestFlight build. Its
+description and What's New text were updated for the three core tools and saved.
+**Add for Review** has not been used.
+
+App Store Connect also has **1.3.0 (18)**, uploaded 10 November 2026, but it is
+not in the tester group and has no recorded installation. Do not substitute it
+for build 1 without identifying its source and testing that exact build.
+
+The draft inherited three iPhone and three iPad screenshots dated August 2023.
+Replace these with captures of the current 1.3.0 UI before submission. The
+inherited Support URL is `https://vydr.io`, the Privacy Policy URL is
+`https://lrnzbr.github.io`, and the listed copyright owner is Vydrio
+Technologies LLC; verify these details with the owner before submission. App
+Privacy currently states that the app collects no data, consistent with the
+local-only implementation documented above.
+
 After installing the beta, use
 [What to Test](../Testing/TESTFLIGHT_WHAT_TO_TEST.txt), the
 [acceptance suite](../Testing/TESTFLIGHT_TEST_SUITE.md) and
