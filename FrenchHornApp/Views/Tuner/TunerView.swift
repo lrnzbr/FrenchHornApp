@@ -75,7 +75,7 @@ struct TunerView: View {
     private var notation: some View {
         VStack(alignment: .leading, spacing: AdagioTheme.Space.xs) {
             Text("Notation").font(.caption).foregroundColor(AdagioTheme.Colors.secondaryInk)
-            Text(key == .F ? "Horn in F" : "Horn in B♭").font(AdagioTheme.TypeStyle.support.weight(.medium))
+            Text(instrumentModel.selectedInstrument?.notationName ?? "Horn in F").font(AdagioTheme.TypeStyle.support.weight(.medium))
         }
     }
     private func updateActivity() {

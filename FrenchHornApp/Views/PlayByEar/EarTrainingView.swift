@@ -11,7 +11,7 @@ struct EarTrainingView: View {
     @State private var route: EarRoute?
 
     private var profile: InstrumentProfile? {
-        InstrumentCatalog.profile(legacyID: instrument.id)
+        instrument.profile
     }
 
     var body: some View {

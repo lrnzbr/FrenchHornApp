@@ -10,13 +10,13 @@ struct ChooseYourHorn: View {
             NavigationView {
                 ScrollView {
                     VStack(alignment: .leading, spacing: AdagioTheme.Space.xl) {
-                        Text("Choose your horn")
+                        Text(AppEdition.current.chooserTitle)
                             .font(AdagioTheme.TypeStyle.screenTitle)
                             .accessibilityAddTraits(.isHeader)
-                        Text("Choose the horn you play so notes and fingerings match your instrument.")
+                        Text(AppEdition.current.chooserSubtitle)
                             .font(AdagioTheme.TypeStyle.body)
                             .foregroundColor(AdagioTheme.Colors.secondaryInk)
-                        ForEach(instruments, id: \.id) { instrument in
+                        ForEach(AppEdition.current.instruments, id: \.id) { instrument in
                             Button {
                                 viewModel.setSelectedInstrument(instrumentID: instrument.id)
                             } label: {
@@ -30,7 +30,7 @@ struct ChooseYourHorn: View {
                     }.padding(AdagioTheme.Space.xl)
                 }
                 .background(AdagioTheme.Colors.canvas.ignoresSafeArea())
-                .navigationTitle("Choose your horn")
+                .navigationTitle(AppEdition.current.chooserTitle)
                 .navigationBarTitleDisplayMode(.inline)
             }
             .navigationViewStyle(.stack)

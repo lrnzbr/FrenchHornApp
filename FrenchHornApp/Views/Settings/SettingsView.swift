@@ -12,9 +12,11 @@ struct SettingsView: View {
                 section("Your instrument") {
                     if let instrument = viewModel.selectedInstrument {
                         InstrumentTabView(instrument: instrument)
-                        Button("Change instrument") { isShowingInstrumentSheet = true }
-                            .buttonStyle(AdagioSecondaryButtonStyle())
-                            .accessibilityIdentifier("settings.instrument")
+                        if AppEdition.current.instruments.count > 1 {
+                            Button("Change instrument") { isShowingInstrumentSheet = true }
+                                .buttonStyle(AdagioSecondaryButtonStyle())
+                                .accessibilityIdentifier("settings.instrument")
+                        }
                     }
                 }
                 section("Appearance") {
@@ -126,7 +128,7 @@ struct ChangeHorn: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: AdagioTheme.Space.md) {
-                    ForEach(instruments, id: \.id) { instrument in
+                    ForEach(AppEdition.current.instruments, id: \.id) { instrument in
                         Button {
                             viewModel.setSelectedInstrument(instrumentID: instrument.id)
                             isPresented = false
@@ -149,7 +151,7 @@ struct ChangeHorn: View {
                 }.padding(AdagioTheme.Space.xl)
             }
             .background(AdagioTheme.Colors.canvas.ignoresSafeArea())
-            .navigationTitle("Choose your horn")
+            .navigationTitle(AppEdition.current.chooserTitle)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {

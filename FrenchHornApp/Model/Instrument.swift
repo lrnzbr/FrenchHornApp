@@ -10,12 +10,44 @@ import Foundation
 enum InstrumentKey {
 	case F
 	case Bflat
+    /// Concert pitch (flute, C trumpet).
+    case C
+    /// E♭ sopranino clarinet: sounds a minor third above written.
+    case EflatSopranino
+    /// Clarinet in A: sounds a minor third below written.
+    case A
 
     /// Add this offset to a written MIDI note to obtain its sounding pitch.
     var soundingSemitoneOffset: Int {
         switch self {
         case .F: return keyOfF
         case .Bflat: return keyOfBFlat
+        case .C: return 0
+        case .EflatSopranino: return 3
+        case .A: return -3
+        }
+    }
+
+    /// The key whose transposition matches a shared instrument profile. Unknown offsets
+    /// read as concert pitch.
+    init(soundingSemitoneOffset offset: Int) {
+        switch offset {
+        case keyOfF: self = .F
+        case keyOfBFlat: self = .Bflat
+        case 3: self = .EflatSopranino
+        case -3: self = .A
+        default: self = .C
+        }
+    }
+
+    /// Short name of the key, for badges.
+    var keyName: String {
+        switch self {
+        case .F: return "F"
+        case .Bflat: return "B♭"
+        case .C: return "C"
+        case .EflatSopranino: return "E♭"
+        case .A: return "A"
         }
     }
 }
@@ -32,6 +64,14 @@ struct Instrument: Hashable {
     var hasTrigger2: Bool
     var instrumentGuideImage: String
     var handImage:String
+    /// `AdagioCore` profile ID for instruments built from a shared profile (clarinet, flute, trumpet).
+    var profileID: String? = nil
+    /// How written parts for this instrument are described; horns derive it from the key.
+    var notationLabel: String? = nil
+
+    var notationName: String {
+        notationLabel ?? (key == .Bflat ? "Horn in B♭" : "Horn in F")
+    }
 }
 struct Fingering: Hashable {
     var id: Int

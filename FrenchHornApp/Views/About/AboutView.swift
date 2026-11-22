@@ -10,7 +10,7 @@ import SwiftUI
 struct AboutView: View {
     var body: some View {
         VStack(alignment: .center){
-            Text("Thank you for downloading the Hornist's Almanac!")
+            Text("Thank you for downloading \(AppEdition.current.almanacTitle)!")
             Text("If you have comments, suggestions, or concerns please feel free to reach out:")
             Spacer()
             Text("lorenzo@vydr.io")

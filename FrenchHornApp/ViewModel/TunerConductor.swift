@@ -152,7 +152,7 @@ final class TunerConductor: ObservableObject {
     }
 
     private func update(_ pitch: Float, _ amplitude: Float) {
-        let instrument = InstrumentViewModel.shared.selectedInstrument ?? instruments[0]
+        let instrument = InstrumentViewModel.shared.selectedInstrument ?? AppEdition.current.instruments[0]
         data = TunerData.measure(pitch: pitch, amplitude: amplitude, sensitivity: micSensitivity, instrumentKey: instrument.key)
         let previousDeadline = displayHold.deadline
         displayHold.receive(data, state: state, at: ProcessInfo.processInfo.systemUptime)
