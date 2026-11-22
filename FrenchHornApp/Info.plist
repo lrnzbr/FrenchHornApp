@@ -6,6 +6,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>AdagioEdition</key>
+	<string>$(ADAGIO_EDITION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 </dict>

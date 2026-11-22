@@ -12,11 +12,19 @@ struct InstrumentTabView: View {
     var body: some View {
 		HStack{
 			ZStack{
-				Color.white
-				Image(instrument.imageName)
-					.resizable()
-					.aspectRatio(contentMode: .fit)
-					
+                if instrument.imageName.isEmpty {
+                    // No artwork yet for this instrument: show the key it is pitched in.
+                    AdagioTheme.Colors.accentMuted
+                    Text(instrument.key.keyName)
+                        .font(.system(.title2, design: .serif).weight(.semibold))
+                        .foregroundColor(AdagioTheme.Colors.accent)
+                        .accessibilityHidden(true)
+                } else {
+                    Color.white
+                    Image(instrument.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
 			}
 			.frame(width: 60, height: 60)
 				.cornerRadius(20)

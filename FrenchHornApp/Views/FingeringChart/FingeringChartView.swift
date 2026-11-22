@@ -1,3 +1,4 @@
+import AdagioCore
 import SwiftUI
 
 struct FingeringChartView: View {
@@ -23,6 +24,23 @@ struct FingeringChartView: View {
         }
     }
 
+    /// Clarinet and flute fingerings come from the shared profile as sets of keys; brass
+    /// instruments keep the valve model.
+    private var woodwindProfile: InstrumentProfile? {
+        guard let profile = instrument.profile, profile.family != .brass else { return nil }
+        return profile
+    }
+    private var woodwindFingerings: [FingeringSpec] {
+        guard let profile = woodwindProfile, let midi = selection.writtenMIDI else { return [] }
+        return profile.fingerings(forWritten: Int(midi))
+    }
+    private var fingeringCount: Int {
+        woodwindProfile == nil ? selection.fingerings.count : woodwindFingerings.count
+    }
+    private var isDraftChart: Bool {
+        instrument.profileID != nil && instrument.profile?.fingeringsVerified == false
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: AdagioTheme.Space.md) {
@@ -37,17 +55,19 @@ struct FingeringChartView: View {
                         HStack(spacing: AdagioTheme.Space.md) { notePicker; octavePicker }
                     }
                     alternateFingerings
-                    DisclosureGroup("Hand & instrument guide") {
-                        VStack {
-                            Image(instrument.handImage).resizable().scaledToFit()
-                            Image(instrument.instrumentGuideImage).resizable().scaledToFit()
+                    if !instrument.handImage.isEmpty {
+                        DisclosureGroup("Hand & instrument guide") {
+                            VStack {
+                                Image(instrument.handImage).resizable().scaledToFit()
+                                Image(instrument.instrumentGuideImage).resizable().scaledToFit()
+                            }
+                            .padding()
+                            .foregroundColor(.black)
+                            .background(Color.white)
                         }
-                        .padding()
-                        .foregroundColor(.black)
-                        .background(Color.white)
+                        .font(AdagioTheme.TypeStyle.support)
+                        .padding(.vertical, AdagioTheme.Space.sm)
                     }
-                    .font(AdagioTheme.TypeStyle.support)
-                    .padding(.vertical, AdagioTheme.Space.sm)
                 } else {
                     Text("No notes are available for this instrument.")
                 }
@@ -83,7 +103,7 @@ struct FingeringChartView: View {
             HStack {
                 Text("WRITTEN NOTE").foregroundColor(AdagioTheme.Colors.secondaryInk)
                 Spacer()
-                Text(selection.instrument.key == .F ? "Horn in F" : "Horn in B♭")
+                Text(selection.instrument.notationName)
                     .foregroundColor(AdagioTheme.Colors.accent)
             }
             .font(.footnote)
@@ -190,15 +210,27 @@ struct FingeringChartView: View {
                 HStack { fingeringHeading; Spacer(minLength: AdagioTheme.Space.sm); spellingButton }
             }
             VStack(spacing: 0) {
-                ForEach(Array(selection.fingerings.enumerated()), id: \.offset) { index, fingering in
-                    if index > 0 { Divider().padding(.horizontal, AdagioTheme.Space.md) }
-                    FingeringRow(instrument: selection.instrument, fingering: fingering, index: index)
+                if let profile = woodwindProfile {
+                    ForEach(Array(woodwindFingerings.enumerated()), id: \.offset) { index, fingering in
+                        if index > 0 { Divider().padding(.horizontal, AdagioTheme.Space.md) }
+                        WoodwindFingeringRow(profile: profile, fingering: fingering, index: index)
+                    }
+                } else {
+                    ForEach(Array(selection.fingerings.enumerated()), id: \.offset) { index, fingering in
+                        if index > 0 { Divider().padding(.horizontal, AdagioTheme.Space.md) }
+                        FingeringRow(instrument: selection.instrument, fingering: fingering, index: index)
+                    }
                 }
             }
             .background(AdagioTheme.Colors.surface)
             .clipShape(RoundedRectangle(cornerRadius: AdagioTheme.Radius.panel))
             .overlay(RoundedRectangle(cornerRadius: AdagioTheme.Radius.panel)
                 .strokeBorder(AdagioTheme.Colors.border, lineWidth: 1))
+            if isDraftChart {
+                Text("Draft chart, not yet checked against a published fingering chart.")
+                    .font(.caption).foregroundColor(AdagioTheme.Colors.attention)
+                    .accessibilityIdentifier("fingerings.draft")
+            }
             if instrument.hasTrigger1 {
                 Text(instrument.hasTrigger2 ? "T / T2 = thumb triggers" : "T = thumb trigger")
                     .font(.caption).foregroundColor(AdagioTheme.Colors.secondaryInk)
@@ -208,9 +240,9 @@ struct FingeringChartView: View {
 
     private var fingeringHeading: some View {
         VStack(alignment: .leading, spacing: AdagioTheme.Space.xs) {
-            Text("Fingerings · \(selection.fingerings.count)").font(.headline)
+            Text("Fingerings · \(fingeringCount)").font(.headline)
                 .accessibilityLabel("Available fingerings")
-                .accessibilityValue(Text(verbatim: String(selection.fingerings.count)))
+                .accessibilityValue(Text(verbatim: String(fingeringCount)))
                 .accessibilityIdentifier("fingerings.count")
             Text("● pressed · ○ released").font(.caption)
                 .foregroundColor(AdagioTheme.Colors.secondaryInk)

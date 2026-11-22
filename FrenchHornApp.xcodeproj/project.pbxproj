@@ -103,6 +103,299 @@
 		AE2000000000000000000003 /* AdagioCore in Frameworks */ = {isa = PBXBuildFile; productRef = AE2000000000000000000002 /* AdagioCore */; };
 		AE2000000000000000000012 /* EarTrainingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000011 /* EarTrainingStore.swift */; };
 		AE2000000000000000000014 /* EarTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000013 /* EarTrainingView.swift */; };
+		AE3000000000000000000002 /* AppEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000001 /* AppEdition.swift */; };
+		AE3000000000000000000004 /* WoodwindFingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000003 /* WoodwindFingeringRow.swift */; };
+		AE310100000000000000000D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8B28D137B200FC21EA /* Extensions.swift */; };
+		AE310100000000000000000E /* Key+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746F2A356EC40048CD21 /* Key+Shortcuts.swift */; };
+		AE310100000000000000000F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */; };
+		AE3101000000000000000010 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167EE2A547253003B8A22 /* SplashScreen.swift */; };
+		AE3101000000000000000011 /* FingeringChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */; };
+		AE3101000000000000000012 /* FingeringChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC62A8D75B400602DAA /* FingeringChartViewModel.swift */; };
+		AE3101000000000000000013 /* BFlatHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F92A549E1F003B8A22 /* BFlatHornFingerings.swift */; };
+		AE3101000000000000000014 /* MarchingBFlatHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F72A549E02003B8A22 /* MarchingBFlatHornFingerings.swift */; };
+		AE3101000000000000000015 /* Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474612A356EC30048CD21 /* Accidental.swift */; };
+		AE3101000000000000000016 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474722A356EC40048CD21 /* Interval.swift */; };
+		AE3101000000000000000017 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */; };
+		AE3101000000000000000018 /* AssembledNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7F28D136F600FC21EA /* AssembledNoteView.swift */; };
+		AE3101000000000000000019 /* TripleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167FB2A549E48003B8A22 /* TripleHornFingerings.swift */; };
+		AE310100000000000000001A /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746D2A356EC40048CD21 /* Chord.swift */; };
+		AE310100000000000000001B /* MetronomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB74A42D39929C005C2F80 /* MetronomeController.swift */; };
+		AE310100000000000000001C /* PlayByEarGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F12A548300003B8A22 /* PlayByEarGame.swift */; };
+		AE310100000000000000001D /* EarTrainingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000011 /* EarTrainingStore.swift */; };
+		AE310100000000000000001E /* EarTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000013 /* EarTrainingView.swift */; };
+		AE310100000000000000001F /* NoteSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474692A356EC40048CD21 /* NoteSet.swift */; };
+		AE3101000000000000000020 /* AssembledStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */; };
+		AE3101000000000000000021 /* DoubleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5A28BECB6C00C7DDCC /* DoubleHornFingerings.swift */; };
+		AE3101000000000000000022 /* LedgerLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */; };
+		AE3101000000000000000023 /* StaffConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */; };
+		AE3101000000000000000024 /* IndividualFingeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */; };
+		AE3101000000000000000025 /* TrebleClefVisualizationMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6428BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift */; };
+		AE3101000000000000000026 /* NoteClass+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474642A356EC30048CD21 /* NoteClass+Shortcuts.swift */; };
+		AE3101000000000000000027 /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746A2A356EC40048CD21 /* BitSet.swift */; };
+		AE3101000000000000000028 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4892A53B388004D7357 /* MainMenu.swift */; };
+		AE3101000000000000000029 /* WholeNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8328D1373000FC21EA /* WholeNoteView.swift */; };
+		AE310100000000000000002A /* NoteClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474702A356EC40048CD21 /* NoteClass.swift */; };
+		AE310100000000000000002B /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8728D1378000FC21EA /* NoteNameView.swift */; };
+		AE310100000000000000002C /* NoteSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474892A3590A10048CD21 /* NoteSampler.swift */; };
+		AE310100000000000000002D /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB499E382A845D0F000BA308 /* PlayPauseButton.swift */; };
+		AE310100000000000000002E /* PitchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474622A356EC30048CD21 /* PitchColor.swift */; };
+		AE310100000000000000002F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4992A53B835004D7357 /* SettingsView.swift */; };
+		AE3101000000000000000030 /* ChooseYourHorn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4822A53A61F004D7357 /* ChooseYourHorn.swift */; };
+		AE3101000000000000000031 /* ChordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746E2A356EC40048CD21 /* ChordTable.swift */; };
+		AE3101000000000000000032 /* Chord+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746C2A356EC40048CD21 /* Chord+Shortcuts.swift */; };
+		AE3101000000000000000033 /* ClefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1402AA28C774880028D884 /* ClefView.swift */; };
+		AE3101000000000000000034 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474672A356EC40048CD21 /* Note.swift */; };
+		AE3101000000000000000035 /* SingleHornInFFinggerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F32A549DE8003B8A22 /* SingleHornInFFinggerings.swift */; };
+		AE3101000000000000000036 /* NoteVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */; };
+		AE3101000000000000000037 /* TunerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* TunerReading.swift */; };
+		AE3101000000000000000038 /* AudioPlaybackLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000041 /* AudioPlaybackLifecycle.swift */; };
+		AE3101000000000000000039 /* MicrophoneStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000031 /* MicrophoneStatusView.swift */; };
+		AE310100000000000000003A /* AudioSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000021 /* AudioSessionCoordinator.swift */; };
+		AE310100000000000000003B /* MicrophoneRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000011 /* MicrophoneRecovery.swift */; };
+		AE310100000000000000003C /* MetronomeAudioRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000061 /* MetronomeAudioRenderer.swift */; };
+		AE310100000000000000003D /* AdagioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000071 /* AdagioTheme.swift */; };
+		AE310100000000000000003E /* FingeringSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000101 /* FingeringSelection.swift */; };
+		AE310100000000000000003F /* TunerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000141 /* TunerPresentation.swift */; };
+		AE3101000000000000000040 /* TunerDisplayHold.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000171 /* TunerDisplayHold.swift */; };
+		AE3101000000000000000041 /* MetronomePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000181 /* MetronomePreferences.swift */; };
+		AE3101000000000000000042 /* TapTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000161 /* TapTempo.swift */; };
+		AE3101000000000000000043 /* TuningMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000151 /* TuningMeter.swift */; };
+		AE3101000000000000000044 /* StaffPreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000111 /* StaffPreviewLayout.swift */; };
+		AE3101000000000000000045 /* StaffPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000121 /* StaffPreview.swift */; };
+		AE3101000000000000000046 /* FingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000131 /* FingeringRow.swift */; };
+		AE3101000000000000000047 /* AdagioComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000081 /* AdagioComponents.swift */; };
+		AE3101000000000000000048 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000091 /* MetronomeView.swift */; };
+		AE3101000000000000000049 /* MetronomeTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000051 /* MetronomeTiming.swift */; };
+		AE310100000000000000004A /* FrenchHornAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */; };
+		AE310100000000000000004B /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746B2A356EC40048CD21 /* Scale.swift */; };
+		AE310100000000000000004C /* TranspositionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */; };
+		AE310100000000000000004D /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4932A53B766004D7357 /* TunerView.swift */; };
+		AE310100000000000000004E /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0360EF2A84B7E9004C27F3 /* AppFont.swift */; };
+		AE310100000000000000004F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB49B2A53B84B004D7357 /* AboutView.swift */; };
+		AE3101000000000000000050 /* Scale+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474682A356EC40048CD21 /* Scale+Shortcuts.swift */; };
+		AE3101000000000000000051 /* NotesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5E28BED47500C7DDCC /* NotesCollection.swift */; };
+		AE3101000000000000000052 /* NoteVisualizationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6228BEDEC100C7DDCC /* NoteVisualizationCollection.swift */; };
+		AE3101000000000000000053 /* TransposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4952A53B804004D7357 /* TransposerView.swift */; };
+		AE3101000000000000000054 /* ChordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474632A356EC30048CD21 /* ChordType.swift */; };
+		AE3101000000000000000055 /* StaffLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8528D1376500FC21EA /* StaffLinesView.swift */; };
+		AE3101000000000000000056 /* InstrumentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4852A53ABA0004D7357 /* InstrumentTabView.swift */; };
+		AE3101000000000000000057 /* MellophoneinFFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F52A549DF3003B8A22 /* MellophoneinFFingerings.swift */; };
+		AE3101000000000000000058 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5828BECB5A00C7DDCC /* Clef.swift */; };
+		AE3101000000000000000059 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474732A356EC40048CD21 /* Key.swift */; };
+		AE310100000000000000005A /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474662A356EC40048CD21 /* Letter.swift */; };
+		AE310100000000000000005B /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4872A53AE28004D7357 /* Instrument.swift */; };
+		AE310100000000000000005C /* NoteNameMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6028BED4AD00C7DDCC /* NoteNameMappings.swift */; };
+		AE310100000000000000005D /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4972A53B81F004D7357 /* ResourcesView.swift */; };
+		AE310100000000000000005E /* InstrumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB499E362A84412B000BA308 /* InstrumentViewModel.swift */; };
+		AE310100000000000000005F /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474712A356EC40048CD21 /* Pitch.swift */; };
+		AE3101000000000000000060 /* Note+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474652A356EC40048CD21 /* Note+Shortcuts.swift */; };
+		AE3101000000000000000061 /* TunerConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC82A8D888900602DAA /* TunerConductor.swift */; };
+		AE3101000000000000000062 /* AppEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000001 /* AppEdition.swift */; };
+		AE3101000000000000000063 /* WoodwindFingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000003 /* WoodwindFingeringRow.swift */; };
+		AE3101000000000000000064 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE3101000000000000000007 /* AudioKit */; };
+		AE3101000000000000000065 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = AE3101000000000000000008 /* AudioKitEX */; };
+		AE3101000000000000000066 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE3101000000000000000009 /* AudioKitUI */; };
+		AE3101000000000000000067 /* KissFFT in Frameworks */ = {isa = PBXBuildFile; productRef = AE310100000000000000000A /* KissFFT */; };
+		AE3101000000000000000068 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE310100000000000000000B /* SoundpipeAudioKit */; };
+		AE3101000000000000000069 /* AdagioCore in Frameworks */ = {isa = PBXBuildFile; productRef = AE310100000000000000000C /* AdagioCore */; };
+		AE310100000000000000006A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4E28BD5B5B00C7DDCC /* Preview Assets.xcassets */; };
+		AE310100000000000000006B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000191 /* PrivacyInfo.xcprivacy */; };
+		AE310100000000000000006C /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = EB1474872A3588C30048CD21 /* Sounds */; };
+		AE310100000000000000006D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */; };
+		AE310200000000000000000D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8B28D137B200FC21EA /* Extensions.swift */; };
+		AE310200000000000000000E /* Key+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746F2A356EC40048CD21 /* Key+Shortcuts.swift */; };
+		AE310200000000000000000F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */; };
+		AE3102000000000000000010 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167EE2A547253003B8A22 /* SplashScreen.swift */; };
+		AE3102000000000000000011 /* FingeringChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */; };
+		AE3102000000000000000012 /* FingeringChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC62A8D75B400602DAA /* FingeringChartViewModel.swift */; };
+		AE3102000000000000000013 /* BFlatHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F92A549E1F003B8A22 /* BFlatHornFingerings.swift */; };
+		AE3102000000000000000014 /* MarchingBFlatHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F72A549E02003B8A22 /* MarchingBFlatHornFingerings.swift */; };
+		AE3102000000000000000015 /* Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474612A356EC30048CD21 /* Accidental.swift */; };
+		AE3102000000000000000016 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474722A356EC40048CD21 /* Interval.swift */; };
+		AE3102000000000000000017 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */; };
+		AE3102000000000000000018 /* AssembledNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7F28D136F600FC21EA /* AssembledNoteView.swift */; };
+		AE3102000000000000000019 /* TripleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167FB2A549E48003B8A22 /* TripleHornFingerings.swift */; };
+		AE310200000000000000001A /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746D2A356EC40048CD21 /* Chord.swift */; };
+		AE310200000000000000001B /* MetronomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB74A42D39929C005C2F80 /* MetronomeController.swift */; };
+		AE310200000000000000001C /* PlayByEarGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F12A548300003B8A22 /* PlayByEarGame.swift */; };
+		AE310200000000000000001D /* EarTrainingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000011 /* EarTrainingStore.swift */; };
+		AE310200000000000000001E /* EarTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000013 /* EarTrainingView.swift */; };
+		AE310200000000000000001F /* NoteSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474692A356EC40048CD21 /* NoteSet.swift */; };
+		AE3102000000000000000020 /* AssembledStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */; };
+		AE3102000000000000000021 /* DoubleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5A28BECB6C00C7DDCC /* DoubleHornFingerings.swift */; };
+		AE3102000000000000000022 /* LedgerLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */; };
+		AE3102000000000000000023 /* StaffConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */; };
+		AE3102000000000000000024 /* IndividualFingeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */; };
+		AE3102000000000000000025 /* TrebleClefVisualizationMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6428BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift */; };
+		AE3102000000000000000026 /* NoteClass+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474642A356EC30048CD21 /* NoteClass+Shortcuts.swift */; };
+		AE3102000000000000000027 /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746A2A356EC40048CD21 /* BitSet.swift */; };
+		AE3102000000000000000028 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4892A53B388004D7357 /* MainMenu.swift */; };
+		AE3102000000000000000029 /* WholeNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8328D1373000FC21EA /* WholeNoteView.swift */; };
+		AE310200000000000000002A /* NoteClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474702A356EC40048CD21 /* NoteClass.swift */; };
+		AE310200000000000000002B /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8728D1378000FC21EA /* NoteNameView.swift */; };
+		AE310200000000000000002C /* NoteSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474892A3590A10048CD21 /* NoteSampler.swift */; };
+		AE310200000000000000002D /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB499E382A845D0F000BA308 /* PlayPauseButton.swift */; };
+		AE310200000000000000002E /* PitchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474622A356EC30048CD21 /* PitchColor.swift */; };
+		AE310200000000000000002F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4992A53B835004D7357 /* SettingsView.swift */; };
+		AE3102000000000000000030 /* ChooseYourHorn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4822A53A61F004D7357 /* ChooseYourHorn.swift */; };
+		AE3102000000000000000031 /* ChordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746E2A356EC40048CD21 /* ChordTable.swift */; };
+		AE3102000000000000000032 /* Chord+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746C2A356EC40048CD21 /* Chord+Shortcuts.swift */; };
+		AE3102000000000000000033 /* ClefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1402AA28C774880028D884 /* ClefView.swift */; };
+		AE3102000000000000000034 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474672A356EC40048CD21 /* Note.swift */; };
+		AE3102000000000000000035 /* SingleHornInFFinggerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F32A549DE8003B8A22 /* SingleHornInFFinggerings.swift */; };
+		AE3102000000000000000036 /* NoteVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */; };
+		AE3102000000000000000037 /* TunerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* TunerReading.swift */; };
+		AE3102000000000000000038 /* AudioPlaybackLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000041 /* AudioPlaybackLifecycle.swift */; };
+		AE3102000000000000000039 /* MicrophoneStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000031 /* MicrophoneStatusView.swift */; };
+		AE310200000000000000003A /* AudioSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000021 /* AudioSessionCoordinator.swift */; };
+		AE310200000000000000003B /* MicrophoneRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000011 /* MicrophoneRecovery.swift */; };
+		AE310200000000000000003C /* MetronomeAudioRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000061 /* MetronomeAudioRenderer.swift */; };
+		AE310200000000000000003D /* AdagioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000071 /* AdagioTheme.swift */; };
+		AE310200000000000000003E /* FingeringSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000101 /* FingeringSelection.swift */; };
+		AE310200000000000000003F /* TunerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000141 /* TunerPresentation.swift */; };
+		AE3102000000000000000040 /* TunerDisplayHold.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000171 /* TunerDisplayHold.swift */; };
+		AE3102000000000000000041 /* MetronomePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000181 /* MetronomePreferences.swift */; };
+		AE3102000000000000000042 /* TapTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000161 /* TapTempo.swift */; };
+		AE3102000000000000000043 /* TuningMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000151 /* TuningMeter.swift */; };
+		AE3102000000000000000044 /* StaffPreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000111 /* StaffPreviewLayout.swift */; };
+		AE3102000000000000000045 /* StaffPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000121 /* StaffPreview.swift */; };
+		AE3102000000000000000046 /* FingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000131 /* FingeringRow.swift */; };
+		AE3102000000000000000047 /* AdagioComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000081 /* AdagioComponents.swift */; };
+		AE3102000000000000000048 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000091 /* MetronomeView.swift */; };
+		AE3102000000000000000049 /* MetronomeTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000051 /* MetronomeTiming.swift */; };
+		AE310200000000000000004A /* FrenchHornAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */; };
+		AE310200000000000000004B /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746B2A356EC40048CD21 /* Scale.swift */; };
+		AE310200000000000000004C /* TranspositionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */; };
+		AE310200000000000000004D /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4932A53B766004D7357 /* TunerView.swift */; };
+		AE310200000000000000004E /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0360EF2A84B7E9004C27F3 /* AppFont.swift */; };
+		AE310200000000000000004F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB49B2A53B84B004D7357 /* AboutView.swift */; };
+		AE3102000000000000000050 /* Scale+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474682A356EC40048CD21 /* Scale+Shortcuts.swift */; };
+		AE3102000000000000000051 /* NotesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5E28BED47500C7DDCC /* NotesCollection.swift */; };
+		AE3102000000000000000052 /* NoteVisualizationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6228BEDEC100C7DDCC /* NoteVisualizationCollection.swift */; };
+		AE3102000000000000000053 /* TransposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4952A53B804004D7357 /* TransposerView.swift */; };
+		AE3102000000000000000054 /* ChordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474632A356EC30048CD21 /* ChordType.swift */; };
+		AE3102000000000000000055 /* StaffLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8528D1376500FC21EA /* StaffLinesView.swift */; };
+		AE3102000000000000000056 /* InstrumentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4852A53ABA0004D7357 /* InstrumentTabView.swift */; };
+		AE3102000000000000000057 /* MellophoneinFFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F52A549DF3003B8A22 /* MellophoneinFFingerings.swift */; };
+		AE3102000000000000000058 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5828BECB5A00C7DDCC /* Clef.swift */; };
+		AE3102000000000000000059 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474732A356EC40048CD21 /* Key.swift */; };
+		AE310200000000000000005A /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474662A356EC40048CD21 /* Letter.swift */; };
+		AE310200000000000000005B /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4872A53AE28004D7357 /* Instrument.swift */; };
+		AE310200000000000000005C /* NoteNameMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6028BED4AD00C7DDCC /* NoteNameMappings.swift */; };
+		AE310200000000000000005D /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4972A53B81F004D7357 /* ResourcesView.swift */; };
+		AE310200000000000000005E /* InstrumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB499E362A84412B000BA308 /* InstrumentViewModel.swift */; };
+		AE310200000000000000005F /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474712A356EC40048CD21 /* Pitch.swift */; };
+		AE3102000000000000000060 /* Note+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474652A356EC40048CD21 /* Note+Shortcuts.swift */; };
+		AE3102000000000000000061 /* TunerConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC82A8D888900602DAA /* TunerConductor.swift */; };
+		AE3102000000000000000062 /* AppEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000001 /* AppEdition.swift */; };
+		AE3102000000000000000063 /* WoodwindFingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000003 /* WoodwindFingeringRow.swift */; };
+		AE3102000000000000000064 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE3102000000000000000007 /* AudioKit */; };
+		AE3102000000000000000065 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = AE3102000000000000000008 /* AudioKitEX */; };
+		AE3102000000000000000066 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE3102000000000000000009 /* AudioKitUI */; };
+		AE3102000000000000000067 /* KissFFT in Frameworks */ = {isa = PBXBuildFile; productRef = AE310200000000000000000A /* KissFFT */; };
+		AE3102000000000000000068 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE310200000000000000000B /* SoundpipeAudioKit */; };
+		AE3102000000000000000069 /* AdagioCore in Frameworks */ = {isa = PBXBuildFile; productRef = AE310200000000000000000C /* AdagioCore */; };
+		AE310200000000000000006A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4E28BD5B5B00C7DDCC /* Preview Assets.xcassets */; };
+		AE310200000000000000006B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000191 /* PrivacyInfo.xcprivacy */; };
+		AE310200000000000000006C /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = EB1474872A3588C30048CD21 /* Sounds */; };
+		AE310200000000000000006D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */; };
+		AE310300000000000000000D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8B28D137B200FC21EA /* Extensions.swift */; };
+		AE310300000000000000000E /* Key+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746F2A356EC40048CD21 /* Key+Shortcuts.swift */; };
+		AE310300000000000000000F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4928BD5B5900C7DDCC /* ContentView.swift */; };
+		AE3103000000000000000010 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167EE2A547253003B8A22 /* SplashScreen.swift */; };
+		AE3103000000000000000011 /* FingeringChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB382A1528CE669100AEF9F7 /* FingeringChartView.swift */; };
+		AE3103000000000000000012 /* FingeringChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC62A8D75B400602DAA /* FingeringChartViewModel.swift */; };
+		AE3103000000000000000013 /* BFlatHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F92A549E1F003B8A22 /* BFlatHornFingerings.swift */; };
+		AE3103000000000000000014 /* MarchingBFlatHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F72A549E02003B8A22 /* MarchingBFlatHornFingerings.swift */; };
+		AE3103000000000000000015 /* Accidental.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474612A356EC30048CD21 /* Accidental.swift */; };
+		AE3103000000000000000016 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474722A356EC40048CD21 /* Interval.swift */; };
+		AE3103000000000000000017 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */; };
+		AE3103000000000000000018 /* AssembledNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7F28D136F600FC21EA /* AssembledNoteView.swift */; };
+		AE3103000000000000000019 /* TripleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167FB2A549E48003B8A22 /* TripleHornFingerings.swift */; };
+		AE310300000000000000001A /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746D2A356EC40048CD21 /* Chord.swift */; };
+		AE310300000000000000001B /* MetronomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDB74A42D39929C005C2F80 /* MetronomeController.swift */; };
+		AE310300000000000000001C /* PlayByEarGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F12A548300003B8A22 /* PlayByEarGame.swift */; };
+		AE310300000000000000001D /* EarTrainingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000011 /* EarTrainingStore.swift */; };
+		AE310300000000000000001E /* EarTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2000000000000000000013 /* EarTrainingView.swift */; };
+		AE310300000000000000001F /* NoteSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474692A356EC40048CD21 /* NoteSet.swift */; };
+		AE3103000000000000000020 /* AssembledStaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8928D1379700FC21EA /* AssembledStaffView.swift */; };
+		AE3103000000000000000021 /* DoubleHornFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5A28BECB6C00C7DDCC /* DoubleHornFingerings.swift */; };
+		AE3103000000000000000022 /* LedgerLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8128D1370E00FC21EA /* LedgerLineView.swift */; };
+		AE3103000000000000000023 /* StaffConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5C28BED38C00C7DDCC /* StaffConstants.swift */; };
+		AE3103000000000000000024 /* IndividualFingeringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED7D28D1326100FC21EA /* IndividualFingeringView.swift */; };
+		AE3103000000000000000025 /* TrebleClefVisualizationMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6428BEE76400C7DDCC /* TrebleClefVisualizationMappings.swift */; };
+		AE3103000000000000000026 /* NoteClass+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474642A356EC30048CD21 /* NoteClass+Shortcuts.swift */; };
+		AE3103000000000000000027 /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746A2A356EC40048CD21 /* BitSet.swift */; };
+		AE3103000000000000000028 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4892A53B388004D7357 /* MainMenu.swift */; };
+		AE3103000000000000000029 /* WholeNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8328D1373000FC21EA /* WholeNoteView.swift */; };
+		AE310300000000000000002A /* NoteClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474702A356EC40048CD21 /* NoteClass.swift */; };
+		AE310300000000000000002B /* NoteNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8728D1378000FC21EA /* NoteNameView.swift */; };
+		AE310300000000000000002C /* NoteSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474892A3590A10048CD21 /* NoteSampler.swift */; };
+		AE310300000000000000002D /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB499E382A845D0F000BA308 /* PlayPauseButton.swift */; };
+		AE310300000000000000002E /* PitchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474622A356EC30048CD21 /* PitchColor.swift */; };
+		AE310300000000000000002F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4992A53B835004D7357 /* SettingsView.swift */; };
+		AE3103000000000000000030 /* ChooseYourHorn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4822A53A61F004D7357 /* ChooseYourHorn.swift */; };
+		AE3103000000000000000031 /* ChordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746E2A356EC40048CD21 /* ChordTable.swift */; };
+		AE3103000000000000000032 /* Chord+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746C2A356EC40048CD21 /* Chord+Shortcuts.swift */; };
+		AE3103000000000000000033 /* ClefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1402AA28C774880028D884 /* ClefView.swift */; };
+		AE3103000000000000000034 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474672A356EC40048CD21 /* Note.swift */; };
+		AE3103000000000000000035 /* SingleHornInFFinggerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F32A549DE8003B8A22 /* SingleHornInFFinggerings.swift */; };
+		AE3103000000000000000036 /* NoteVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6D28BEF17200C7DDCC /* NoteVisualization.swift */; };
+		AE3103000000000000000037 /* TunerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000001 /* TunerReading.swift */; };
+		AE3103000000000000000038 /* AudioPlaybackLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000041 /* AudioPlaybackLifecycle.swift */; };
+		AE3103000000000000000039 /* MicrophoneStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000031 /* MicrophoneStatusView.swift */; };
+		AE310300000000000000003A /* AudioSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000021 /* AudioSessionCoordinator.swift */; };
+		AE310300000000000000003B /* MicrophoneRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000011 /* MicrophoneRecovery.swift */; };
+		AE310300000000000000003C /* MetronomeAudioRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000061 /* MetronomeAudioRenderer.swift */; };
+		AE310300000000000000003D /* AdagioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000071 /* AdagioTheme.swift */; };
+		AE310300000000000000003E /* FingeringSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000101 /* FingeringSelection.swift */; };
+		AE310300000000000000003F /* TunerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000141 /* TunerPresentation.swift */; };
+		AE3103000000000000000040 /* TunerDisplayHold.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000171 /* TunerDisplayHold.swift */; };
+		AE3103000000000000000041 /* MetronomePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000181 /* MetronomePreferences.swift */; };
+		AE3103000000000000000042 /* TapTempo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000161 /* TapTempo.swift */; };
+		AE3103000000000000000043 /* TuningMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000151 /* TuningMeter.swift */; };
+		AE3103000000000000000044 /* StaffPreviewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000111 /* StaffPreviewLayout.swift */; };
+		AE3103000000000000000045 /* StaffPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000121 /* StaffPreview.swift */; };
+		AE3103000000000000000046 /* FingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000131 /* FingeringRow.swift */; };
+		AE3103000000000000000047 /* AdagioComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000081 /* AdagioComponents.swift */; };
+		AE3103000000000000000048 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000091 /* MetronomeView.swift */; };
+		AE3103000000000000000049 /* MetronomeTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000051 /* MetronomeTiming.swift */; };
+		AE310300000000000000004A /* FrenchHornAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F4728BD5B5900C7DDCC /* FrenchHornAppApp.swift */; };
+		AE310300000000000000004B /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB14746B2A356EC40048CD21 /* Scale.swift */; };
+		AE310300000000000000004C /* TranspositionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6628BEE85600C7DDCC /* TranspositionConstants.swift */; };
+		AE310300000000000000004D /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4932A53B766004D7357 /* TunerView.swift */; };
+		AE310300000000000000004E /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0360EF2A84B7E9004C27F3 /* AppFont.swift */; };
+		AE310300000000000000004F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB49B2A53B84B004D7357 /* AboutView.swift */; };
+		AE3103000000000000000050 /* Scale+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474682A356EC40048CD21 /* Scale+Shortcuts.swift */; };
+		AE3103000000000000000051 /* NotesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5E28BED47500C7DDCC /* NotesCollection.swift */; };
+		AE3103000000000000000052 /* NoteVisualizationCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6228BEDEC100C7DDCC /* NoteVisualizationCollection.swift */; };
+		AE3103000000000000000053 /* TransposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4952A53B804004D7357 /* TransposerView.swift */; };
+		AE3103000000000000000054 /* ChordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474632A356EC30048CD21 /* ChordType.swift */; };
+		AE3103000000000000000055 /* StaffLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59ED8528D1376500FC21EA /* StaffLinesView.swift */; };
+		AE3103000000000000000056 /* InstrumentTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4852A53ABA0004D7357 /* InstrumentTabView.swift */; };
+		AE3103000000000000000057 /* MellophoneinFFingerings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF167F52A549DF3003B8A22 /* MellophoneinFFingerings.swift */; };
+		AE3103000000000000000058 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F5828BECB5A00C7DDCC /* Clef.swift */; };
+		AE3103000000000000000059 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474732A356EC40048CD21 /* Key.swift */; };
+		AE310300000000000000005A /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474662A356EC40048CD21 /* Letter.swift */; };
+		AE310300000000000000005B /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4872A53AE28004D7357 /* Instrument.swift */; };
+		AE310300000000000000005C /* NoteNameMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4D9F6028BED4AD00C7DDCC /* NoteNameMappings.swift */; };
+		AE310300000000000000005D /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBB4972A53B81F004D7357 /* ResourcesView.swift */; };
+		AE310300000000000000005E /* InstrumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB499E362A84412B000BA308 /* InstrumentViewModel.swift */; };
+		AE310300000000000000005F /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474712A356EC40048CD21 /* Pitch.swift */; };
+		AE3103000000000000000060 /* Note+Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1474652A356EC40048CD21 /* Note+Shortcuts.swift */; };
+		AE3103000000000000000061 /* TunerConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91CAC82A8D888900602DAA /* TunerConductor.swift */; };
+		AE3103000000000000000062 /* AppEdition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000001 /* AppEdition.swift */; };
+		AE3103000000000000000063 /* WoodwindFingeringRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3000000000000000000003 /* WoodwindFingeringRow.swift */; };
+		AE3103000000000000000064 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE3103000000000000000007 /* AudioKit */; };
+		AE3103000000000000000065 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = AE3103000000000000000008 /* AudioKitEX */; };
+		AE3103000000000000000066 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE3103000000000000000009 /* AudioKitUI */; };
+		AE3103000000000000000067 /* KissFFT in Frameworks */ = {isa = PBXBuildFile; productRef = AE310300000000000000000A /* KissFFT */; };
+		AE3103000000000000000068 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE310300000000000000000B /* SoundpipeAudioKit */; };
+		AE3103000000000000000069 /* AdagioCore in Frameworks */ = {isa = PBXBuildFile; productRef = AE310300000000000000000C /* AdagioCore */; };
+		AE310300000000000000006A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4E28BD5B5B00C7DDCC /* Preview Assets.xcassets */; };
+		AE310300000000000000006B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AD0000000000000000000191 /* PrivacyInfo.xcprivacy */; };
+		AE310300000000000000006C /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = EB1474872A3588C30048CD21 /* Sounds */; };
+		AE310300000000000000006D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4D9F4B28BD5B5B00C7DDCC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +497,11 @@
 		AE2000000000000000000001 /* AdagioCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AdagioCore; path = ../AdagioCore; sourceTree = "<group>"; };
 		AE2000000000000000000011 /* EarTrainingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarTrainingStore.swift; sourceTree = "<group>"; };
 		AE2000000000000000000013 /* EarTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarTrainingView.swift; sourceTree = "<group>"; };
+		AE3000000000000000000001 /* AppEdition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEdition.swift; sourceTree = "<group>"; };
+		AE3000000000000000000003 /* WoodwindFingeringRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodwindFingeringRow.swift; sourceTree = "<group>"; };
+		AE3101000000000000000002 /* ClarinetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClarinetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3102000000000000000002 /* FluteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3103000000000000000002 /* TrumpetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +516,45 @@
 				EB4D9F7728C14AB200C7DDCC /* AudioKitUI in Frameworks */,
 				EB4D9F7428C14A9500C7DDCC /* AudioKitEX in Frameworks */,
 				AE2000000000000000000003 /* AdagioCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3101000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3101000000000000000064 /* AudioKit in Frameworks */,
+				AE3101000000000000000065 /* AudioKitEX in Frameworks */,
+				AE3101000000000000000066 /* AudioKitUI in Frameworks */,
+				AE3101000000000000000067 /* KissFFT in Frameworks */,
+				AE3101000000000000000068 /* SoundpipeAudioKit in Frameworks */,
+				AE3101000000000000000069 /* AdagioCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3102000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3102000000000000000064 /* AudioKit in Frameworks */,
+				AE3102000000000000000065 /* AudioKitEX in Frameworks */,
+				AE3102000000000000000066 /* AudioKitUI in Frameworks */,
+				AE3102000000000000000067 /* KissFFT in Frameworks */,
+				AE3102000000000000000068 /* SoundpipeAudioKit in Frameworks */,
+				AE3102000000000000000069 /* AdagioCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3103000000000000000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3103000000000000000064 /* AudioKit in Frameworks */,
+				AE3103000000000000000065 /* AudioKitEX in Frameworks */,
+				AE3103000000000000000066 /* AudioKitUI in Frameworks */,
+				AE3103000000000000000067 /* KissFFT in Frameworks */,
+				AE3103000000000000000068 /* SoundpipeAudioKit in Frameworks */,
+				AE3103000000000000000069 /* AdagioCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +651,9 @@
 			children = (
 				EB4D9F4428BD5B5900C7DDCC /* FrenchHornApp.app */,
 				AD1000000000000000000004 /* FrenchHornAppUITests.xctest */,
+				AE3101000000000000000002 /* ClarinetApp.app */,
+				AE3102000000000000000002 /* FluteApp.app */,
+				AE3103000000000000000002 /* TrumpetApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,6 +661,7 @@
 		EB4D9F4628BD5B5900C7DDCC /* FrenchHornApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE3000000000000000000005 /* Editions */,
 				EBDB74A52D39929C005C2F80 /* Controllers */,
 				EB0360EE2A84B7DF004C27F3 /* Theme */,
 				EB499E352A844114000BA308 /* ViewModel */,
@@ -495,6 +836,7 @@
 				EB6DB6062A3A76DA00734154 /* NoteDetailView.swift */,
 				AD0000000000000000000121 /* StaffPreview.swift */,
 				AD0000000000000000000131 /* FingeringRow.swift */,
+				AE3000000000000000000003 /* WoodwindFingeringRow.swift */,
 			);
 			path = FingeringChart;
 			sourceTree = "<group>";
@@ -515,6 +857,14 @@
 				AE2000000000000000000013 /* EarTrainingView.swift */,
 			);
 			path = PlayByEar;
+			sourceTree = "<group>";
+		};
+		AE3000000000000000000005 /* Editions */ = {
+			isa = PBXGroup;
+			children = (
+				AE3000000000000000000001 /* AppEdition.swift */,
+			);
+			path = Editions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -556,6 +906,81 @@
 			productReference = EB4D9F4428BD5B5900C7DDCC /* FrenchHornApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AE3101000000000000000001 /* ClarinetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3101000000000000000006 /* Build configuration list for PBXNativeTarget "ClarinetApp" */;
+			buildPhases = (
+				AE3101000000000000000003 /* Sources */,
+				AE3101000000000000000004 /* Frameworks */,
+				AE3101000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClarinetApp;
+			packageProductDependencies = (
+				AE3101000000000000000007 /* AudioKit */,
+				AE3101000000000000000008 /* AudioKitEX */,
+				AE3101000000000000000009 /* AudioKitUI */,
+				AE310100000000000000000A /* KissFFT */,
+				AE310100000000000000000B /* SoundpipeAudioKit */,
+				AE310100000000000000000C /* AdagioCore */,
+			);
+			productName = ClarinetApp;
+			productReference = AE3101000000000000000002 /* ClarinetApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE3102000000000000000001 /* FluteApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3102000000000000000006 /* Build configuration list for PBXNativeTarget "FluteApp" */;
+			buildPhases = (
+				AE3102000000000000000003 /* Sources */,
+				AE3102000000000000000004 /* Frameworks */,
+				AE3102000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FluteApp;
+			packageProductDependencies = (
+				AE3102000000000000000007 /* AudioKit */,
+				AE3102000000000000000008 /* AudioKitEX */,
+				AE3102000000000000000009 /* AudioKitUI */,
+				AE310200000000000000000A /* KissFFT */,
+				AE310200000000000000000B /* SoundpipeAudioKit */,
+				AE310200000000000000000C /* AdagioCore */,
+			);
+			productName = FluteApp;
+			productReference = AE3102000000000000000002 /* FluteApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE3103000000000000000001 /* TrumpetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3103000000000000000006 /* Build configuration list for PBXNativeTarget "TrumpetApp" */;
+			buildPhases = (
+				AE3103000000000000000003 /* Sources */,
+				AE3103000000000000000004 /* Frameworks */,
+				AE3103000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrumpetApp;
+			packageProductDependencies = (
+				AE3103000000000000000007 /* AudioKit */,
+				AE3103000000000000000008 /* AudioKitEX */,
+				AE3103000000000000000009 /* AudioKitUI */,
+				AE310300000000000000000A /* KissFFT */,
+				AE310300000000000000000B /* SoundpipeAudioKit */,
+				AE310300000000000000000C /* AdagioCore */,
+			);
+			productName = TrumpetApp;
+			productReference = AE3103000000000000000002 /* TrumpetApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -594,6 +1019,9 @@
 			targets = (
 				EB4D9F4328BD5B5900C7DDCC /* FrenchHornApp */,
 				AD1000000000000000000001 /* FrenchHornAppUITests */,
+				AE3101000000000000000001 /* ClarinetApp */,
+				AE3102000000000000000001 /* FluteApp */,
+				AE3103000000000000000001 /* TrumpetApp */,
 			);
 		};
 /* End PBXProject section */
@@ -608,6 +1036,39 @@
 				AD0000000000000000000192 /* PrivacyInfo.xcprivacy in Resources */,
 				EB1474882A3588C30048CD21 /* Sounds in Resources */,
 				EB4D9F4C28BD5B5B00C7DDCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3101000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE310100000000000000006A /* Preview Assets.xcassets in Resources */,
+				AE310100000000000000006B /* PrivacyInfo.xcprivacy in Resources */,
+				AE310100000000000000006C /* Sounds in Resources */,
+				AE310100000000000000006D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3102000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE310200000000000000006A /* Preview Assets.xcassets in Resources */,
+				AE310200000000000000006B /* PrivacyInfo.xcprivacy in Resources */,
+				AE310200000000000000006C /* Sounds in Resources */,
+				AE310200000000000000006D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3103000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE310300000000000000006A /* Preview Assets.xcassets in Resources */,
+				AE310300000000000000006B /* PrivacyInfo.xcprivacy in Resources */,
+				AE310300000000000000006C /* Sounds in Resources */,
+				AE310300000000000000006D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +1098,8 @@
 				EBF167F22A548300003B8A22 /* PlayByEarGame.swift in Sources */,
 				AE2000000000000000000012 /* EarTrainingStore.swift in Sources */,
 				AE2000000000000000000014 /* EarTrainingView.swift in Sources */,
+				AE3000000000000000000002 /* AppEdition.swift in Sources */,
+				AE3000000000000000000004 /* WoodwindFingeringRow.swift in Sources */,
 				EB14747C2A356EC40048CD21 /* NoteSet.swift in Sources */,
 				EB59ED8A28D1379700FC21EA /* AssembledStaffView.swift in Sources */,
 				EB4D9F5B28BECB6C00C7DDCC /* DoubleHornFingerings.swift in Sources */,
@@ -704,6 +1167,288 @@
 				EB1474842A356EC40048CD21 /* Pitch.swift in Sources */,
 				EB1474782A356EC40048CD21 /* Note+Shortcuts.swift in Sources */,
 				EB91CAC92A8D888900602DAA /* TunerConductor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3101000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE310100000000000000000D /* Extensions.swift in Sources */,
+				AE310100000000000000000E /* Key+Shortcuts.swift in Sources */,
+				AE310100000000000000000F /* ContentView.swift in Sources */,
+				AE3101000000000000000010 /* SplashScreen.swift in Sources */,
+				AE3101000000000000000011 /* FingeringChartView.swift in Sources */,
+				AE3101000000000000000012 /* FingeringChartViewModel.swift in Sources */,
+				AE3101000000000000000013 /* BFlatHornFingerings.swift in Sources */,
+				AE3101000000000000000014 /* MarchingBFlatHornFingerings.swift in Sources */,
+				AE3101000000000000000015 /* Accidental.swift in Sources */,
+				AE3101000000000000000016 /* Interval.swift in Sources */,
+				AE3101000000000000000017 /* NoteDetailView.swift in Sources */,
+				AE3101000000000000000018 /* AssembledNoteView.swift in Sources */,
+				AE3101000000000000000019 /* TripleHornFingerings.swift in Sources */,
+				AE310100000000000000001A /* Chord.swift in Sources */,
+				AE310100000000000000001B /* MetronomeController.swift in Sources */,
+				AE310100000000000000001C /* PlayByEarGame.swift in Sources */,
+				AE310100000000000000001D /* EarTrainingStore.swift in Sources */,
+				AE310100000000000000001E /* EarTrainingView.swift in Sources */,
+				AE310100000000000000001F /* NoteSet.swift in Sources */,
+				AE3101000000000000000020 /* AssembledStaffView.swift in Sources */,
+				AE3101000000000000000021 /* DoubleHornFingerings.swift in Sources */,
+				AE3101000000000000000022 /* LedgerLineView.swift in Sources */,
+				AE3101000000000000000023 /* StaffConstants.swift in Sources */,
+				AE3101000000000000000024 /* IndividualFingeringView.swift in Sources */,
+				AE3101000000000000000025 /* TrebleClefVisualizationMappings.swift in Sources */,
+				AE3101000000000000000026 /* NoteClass+Shortcuts.swift in Sources */,
+				AE3101000000000000000027 /* BitSet.swift in Sources */,
+				AE3101000000000000000028 /* MainMenu.swift in Sources */,
+				AE3101000000000000000029 /* WholeNoteView.swift in Sources */,
+				AE310100000000000000002A /* NoteClass.swift in Sources */,
+				AE310100000000000000002B /* NoteNameView.swift in Sources */,
+				AE310100000000000000002C /* NoteSampler.swift in Sources */,
+				AE310100000000000000002D /* PlayPauseButton.swift in Sources */,
+				AE310100000000000000002E /* PitchColor.swift in Sources */,
+				AE310100000000000000002F /* SettingsView.swift in Sources */,
+				AE3101000000000000000030 /* ChooseYourHorn.swift in Sources */,
+				AE3101000000000000000031 /* ChordTable.swift in Sources */,
+				AE3101000000000000000032 /* Chord+Shortcuts.swift in Sources */,
+				AE3101000000000000000033 /* ClefView.swift in Sources */,
+				AE3101000000000000000034 /* Note.swift in Sources */,
+				AE3101000000000000000035 /* SingleHornInFFinggerings.swift in Sources */,
+				AE3101000000000000000036 /* NoteVisualization.swift in Sources */,
+				AE3101000000000000000037 /* TunerReading.swift in Sources */,
+				AE3101000000000000000038 /* AudioPlaybackLifecycle.swift in Sources */,
+				AE3101000000000000000039 /* MicrophoneStatusView.swift in Sources */,
+				AE310100000000000000003A /* AudioSessionCoordinator.swift in Sources */,
+				AE310100000000000000003B /* MicrophoneRecovery.swift in Sources */,
+				AE310100000000000000003C /* MetronomeAudioRenderer.swift in Sources */,
+				AE310100000000000000003D /* AdagioTheme.swift in Sources */,
+				AE310100000000000000003E /* FingeringSelection.swift in Sources */,
+				AE310100000000000000003F /* TunerPresentation.swift in Sources */,
+				AE3101000000000000000040 /* TunerDisplayHold.swift in Sources */,
+				AE3101000000000000000041 /* MetronomePreferences.swift in Sources */,
+				AE3101000000000000000042 /* TapTempo.swift in Sources */,
+				AE3101000000000000000043 /* TuningMeter.swift in Sources */,
+				AE3101000000000000000044 /* StaffPreviewLayout.swift in Sources */,
+				AE3101000000000000000045 /* StaffPreview.swift in Sources */,
+				AE3101000000000000000046 /* FingeringRow.swift in Sources */,
+				AE3101000000000000000047 /* AdagioComponents.swift in Sources */,
+				AE3101000000000000000048 /* MetronomeView.swift in Sources */,
+				AE3101000000000000000049 /* MetronomeTiming.swift in Sources */,
+				AE310100000000000000004A /* FrenchHornAppApp.swift in Sources */,
+				AE310100000000000000004B /* Scale.swift in Sources */,
+				AE310100000000000000004C /* TranspositionConstants.swift in Sources */,
+				AE310100000000000000004D /* TunerView.swift in Sources */,
+				AE310100000000000000004E /* AppFont.swift in Sources */,
+				AE310100000000000000004F /* AboutView.swift in Sources */,
+				AE3101000000000000000050 /* Scale+Shortcuts.swift in Sources */,
+				AE3101000000000000000051 /* NotesCollection.swift in Sources */,
+				AE3101000000000000000052 /* NoteVisualizationCollection.swift in Sources */,
+				AE3101000000000000000053 /* TransposerView.swift in Sources */,
+				AE3101000000000000000054 /* ChordType.swift in Sources */,
+				AE3101000000000000000055 /* StaffLinesView.swift in Sources */,
+				AE3101000000000000000056 /* InstrumentTabView.swift in Sources */,
+				AE3101000000000000000057 /* MellophoneinFFingerings.swift in Sources */,
+				AE3101000000000000000058 /* Clef.swift in Sources */,
+				AE3101000000000000000059 /* Key.swift in Sources */,
+				AE310100000000000000005A /* Letter.swift in Sources */,
+				AE310100000000000000005B /* Instrument.swift in Sources */,
+				AE310100000000000000005C /* NoteNameMappings.swift in Sources */,
+				AE310100000000000000005D /* ResourcesView.swift in Sources */,
+				AE310100000000000000005E /* InstrumentViewModel.swift in Sources */,
+				AE310100000000000000005F /* Pitch.swift in Sources */,
+				AE3101000000000000000060 /* Note+Shortcuts.swift in Sources */,
+				AE3101000000000000000061 /* TunerConductor.swift in Sources */,
+				AE3101000000000000000062 /* AppEdition.swift in Sources */,
+				AE3101000000000000000063 /* WoodwindFingeringRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3102000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE310200000000000000000D /* Extensions.swift in Sources */,
+				AE310200000000000000000E /* Key+Shortcuts.swift in Sources */,
+				AE310200000000000000000F /* ContentView.swift in Sources */,
+				AE3102000000000000000010 /* SplashScreen.swift in Sources */,
+				AE3102000000000000000011 /* FingeringChartView.swift in Sources */,
+				AE3102000000000000000012 /* FingeringChartViewModel.swift in Sources */,
+				AE3102000000000000000013 /* BFlatHornFingerings.swift in Sources */,
+				AE3102000000000000000014 /* MarchingBFlatHornFingerings.swift in Sources */,
+				AE3102000000000000000015 /* Accidental.swift in Sources */,
+				AE3102000000000000000016 /* Interval.swift in Sources */,
+				AE3102000000000000000017 /* NoteDetailView.swift in Sources */,
+				AE3102000000000000000018 /* AssembledNoteView.swift in Sources */,
+				AE3102000000000000000019 /* TripleHornFingerings.swift in Sources */,
+				AE310200000000000000001A /* Chord.swift in Sources */,
+				AE310200000000000000001B /* MetronomeController.swift in Sources */,
+				AE310200000000000000001C /* PlayByEarGame.swift in Sources */,
+				AE310200000000000000001D /* EarTrainingStore.swift in Sources */,
+				AE310200000000000000001E /* EarTrainingView.swift in Sources */,
+				AE310200000000000000001F /* NoteSet.swift in Sources */,
+				AE3102000000000000000020 /* AssembledStaffView.swift in Sources */,
+				AE3102000000000000000021 /* DoubleHornFingerings.swift in Sources */,
+				AE3102000000000000000022 /* LedgerLineView.swift in Sources */,
+				AE3102000000000000000023 /* StaffConstants.swift in Sources */,
+				AE3102000000000000000024 /* IndividualFingeringView.swift in Sources */,
+				AE3102000000000000000025 /* TrebleClefVisualizationMappings.swift in Sources */,
+				AE3102000000000000000026 /* NoteClass+Shortcuts.swift in Sources */,
+				AE3102000000000000000027 /* BitSet.swift in Sources */,
+				AE3102000000000000000028 /* MainMenu.swift in Sources */,
+				AE3102000000000000000029 /* WholeNoteView.swift in Sources */,
+				AE310200000000000000002A /* NoteClass.swift in Sources */,
+				AE310200000000000000002B /* NoteNameView.swift in Sources */,
+				AE310200000000000000002C /* NoteSampler.swift in Sources */,
+				AE310200000000000000002D /* PlayPauseButton.swift in Sources */,
+				AE310200000000000000002E /* PitchColor.swift in Sources */,
+				AE310200000000000000002F /* SettingsView.swift in Sources */,
+				AE3102000000000000000030 /* ChooseYourHorn.swift in Sources */,
+				AE3102000000000000000031 /* ChordTable.swift in Sources */,
+				AE3102000000000000000032 /* Chord+Shortcuts.swift in Sources */,
+				AE3102000000000000000033 /* ClefView.swift in Sources */,
+				AE3102000000000000000034 /* Note.swift in Sources */,
+				AE3102000000000000000035 /* SingleHornInFFinggerings.swift in Sources */,
+				AE3102000000000000000036 /* NoteVisualization.swift in Sources */,
+				AE3102000000000000000037 /* TunerReading.swift in Sources */,
+				AE3102000000000000000038 /* AudioPlaybackLifecycle.swift in Sources */,
+				AE3102000000000000000039 /* MicrophoneStatusView.swift in Sources */,
+				AE310200000000000000003A /* AudioSessionCoordinator.swift in Sources */,
+				AE310200000000000000003B /* MicrophoneRecovery.swift in Sources */,
+				AE310200000000000000003C /* MetronomeAudioRenderer.swift in Sources */,
+				AE310200000000000000003D /* AdagioTheme.swift in Sources */,
+				AE310200000000000000003E /* FingeringSelection.swift in Sources */,
+				AE310200000000000000003F /* TunerPresentation.swift in Sources */,
+				AE3102000000000000000040 /* TunerDisplayHold.swift in Sources */,
+				AE3102000000000000000041 /* MetronomePreferences.swift in Sources */,
+				AE3102000000000000000042 /* TapTempo.swift in Sources */,
+				AE3102000000000000000043 /* TuningMeter.swift in Sources */,
+				AE3102000000000000000044 /* StaffPreviewLayout.swift in Sources */,
+				AE3102000000000000000045 /* StaffPreview.swift in Sources */,
+				AE3102000000000000000046 /* FingeringRow.swift in Sources */,
+				AE3102000000000000000047 /* AdagioComponents.swift in Sources */,
+				AE3102000000000000000048 /* MetronomeView.swift in Sources */,
+				AE3102000000000000000049 /* MetronomeTiming.swift in Sources */,
+				AE310200000000000000004A /* FrenchHornAppApp.swift in Sources */,
+				AE310200000000000000004B /* Scale.swift in Sources */,
+				AE310200000000000000004C /* TranspositionConstants.swift in Sources */,
+				AE310200000000000000004D /* TunerView.swift in Sources */,
+				AE310200000000000000004E /* AppFont.swift in Sources */,
+				AE310200000000000000004F /* AboutView.swift in Sources */,
+				AE3102000000000000000050 /* Scale+Shortcuts.swift in Sources */,
+				AE3102000000000000000051 /* NotesCollection.swift in Sources */,
+				AE3102000000000000000052 /* NoteVisualizationCollection.swift in Sources */,
+				AE3102000000000000000053 /* TransposerView.swift in Sources */,
+				AE3102000000000000000054 /* ChordType.swift in Sources */,
+				AE3102000000000000000055 /* StaffLinesView.swift in Sources */,
+				AE3102000000000000000056 /* InstrumentTabView.swift in Sources */,
+				AE3102000000000000000057 /* MellophoneinFFingerings.swift in Sources */,
+				AE3102000000000000000058 /* Clef.swift in Sources */,
+				AE3102000000000000000059 /* Key.swift in Sources */,
+				AE310200000000000000005A /* Letter.swift in Sources */,
+				AE310200000000000000005B /* Instrument.swift in Sources */,
+				AE310200000000000000005C /* NoteNameMappings.swift in Sources */,
+				AE310200000000000000005D /* ResourcesView.swift in Sources */,
+				AE310200000000000000005E /* InstrumentViewModel.swift in Sources */,
+				AE310200000000000000005F /* Pitch.swift in Sources */,
+				AE3102000000000000000060 /* Note+Shortcuts.swift in Sources */,
+				AE3102000000000000000061 /* TunerConductor.swift in Sources */,
+				AE3102000000000000000062 /* AppEdition.swift in Sources */,
+				AE3102000000000000000063 /* WoodwindFingeringRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3103000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE310300000000000000000D /* Extensions.swift in Sources */,
+				AE310300000000000000000E /* Key+Shortcuts.swift in Sources */,
+				AE310300000000000000000F /* ContentView.swift in Sources */,
+				AE3103000000000000000010 /* SplashScreen.swift in Sources */,
+				AE3103000000000000000011 /* FingeringChartView.swift in Sources */,
+				AE3103000000000000000012 /* FingeringChartViewModel.swift in Sources */,
+				AE3103000000000000000013 /* BFlatHornFingerings.swift in Sources */,
+				AE3103000000000000000014 /* MarchingBFlatHornFingerings.swift in Sources */,
+				AE3103000000000000000015 /* Accidental.swift in Sources */,
+				AE3103000000000000000016 /* Interval.swift in Sources */,
+				AE3103000000000000000017 /* NoteDetailView.swift in Sources */,
+				AE3103000000000000000018 /* AssembledNoteView.swift in Sources */,
+				AE3103000000000000000019 /* TripleHornFingerings.swift in Sources */,
+				AE310300000000000000001A /* Chord.swift in Sources */,
+				AE310300000000000000001B /* MetronomeController.swift in Sources */,
+				AE310300000000000000001C /* PlayByEarGame.swift in Sources */,
+				AE310300000000000000001D /* EarTrainingStore.swift in Sources */,
+				AE310300000000000000001E /* EarTrainingView.swift in Sources */,
+				AE310300000000000000001F /* NoteSet.swift in Sources */,
+				AE3103000000000000000020 /* AssembledStaffView.swift in Sources */,
+				AE3103000000000000000021 /* DoubleHornFingerings.swift in Sources */,
+				AE3103000000000000000022 /* LedgerLineView.swift in Sources */,
+				AE3103000000000000000023 /* StaffConstants.swift in Sources */,
+				AE3103000000000000000024 /* IndividualFingeringView.swift in Sources */,
+				AE3103000000000000000025 /* TrebleClefVisualizationMappings.swift in Sources */,
+				AE3103000000000000000026 /* NoteClass+Shortcuts.swift in Sources */,
+				AE3103000000000000000027 /* BitSet.swift in Sources */,
+				AE3103000000000000000028 /* MainMenu.swift in Sources */,
+				AE3103000000000000000029 /* WholeNoteView.swift in Sources */,
+				AE310300000000000000002A /* NoteClass.swift in Sources */,
+				AE310300000000000000002B /* NoteNameView.swift in Sources */,
+				AE310300000000000000002C /* NoteSampler.swift in Sources */,
+				AE310300000000000000002D /* PlayPauseButton.swift in Sources */,
+				AE310300000000000000002E /* PitchColor.swift in Sources */,
+				AE310300000000000000002F /* SettingsView.swift in Sources */,
+				AE3103000000000000000030 /* ChooseYourHorn.swift in Sources */,
+				AE3103000000000000000031 /* ChordTable.swift in Sources */,
+				AE3103000000000000000032 /* Chord+Shortcuts.swift in Sources */,
+				AE3103000000000000000033 /* ClefView.swift in Sources */,
+				AE3103000000000000000034 /* Note.swift in Sources */,
+				AE3103000000000000000035 /* SingleHornInFFinggerings.swift in Sources */,
+				AE3103000000000000000036 /* NoteVisualization.swift in Sources */,
+				AE3103000000000000000037 /* TunerReading.swift in Sources */,
+				AE3103000000000000000038 /* AudioPlaybackLifecycle.swift in Sources */,
+				AE3103000000000000000039 /* MicrophoneStatusView.swift in Sources */,
+				AE310300000000000000003A /* AudioSessionCoordinator.swift in Sources */,
+				AE310300000000000000003B /* MicrophoneRecovery.swift in Sources */,
+				AE310300000000000000003C /* MetronomeAudioRenderer.swift in Sources */,
+				AE310300000000000000003D /* AdagioTheme.swift in Sources */,
+				AE310300000000000000003E /* FingeringSelection.swift in Sources */,
+				AE310300000000000000003F /* TunerPresentation.swift in Sources */,
+				AE3103000000000000000040 /* TunerDisplayHold.swift in Sources */,
+				AE3103000000000000000041 /* MetronomePreferences.swift in Sources */,
+				AE3103000000000000000042 /* TapTempo.swift in Sources */,
+				AE3103000000000000000043 /* TuningMeter.swift in Sources */,
+				AE3103000000000000000044 /* StaffPreviewLayout.swift in Sources */,
+				AE3103000000000000000045 /* StaffPreview.swift in Sources */,
+				AE3103000000000000000046 /* FingeringRow.swift in Sources */,
+				AE3103000000000000000047 /* AdagioComponents.swift in Sources */,
+				AE3103000000000000000048 /* MetronomeView.swift in Sources */,
+				AE3103000000000000000049 /* MetronomeTiming.swift in Sources */,
+				AE310300000000000000004A /* FrenchHornAppApp.swift in Sources */,
+				AE310300000000000000004B /* Scale.swift in Sources */,
+				AE310300000000000000004C /* TranspositionConstants.swift in Sources */,
+				AE310300000000000000004D /* TunerView.swift in Sources */,
+				AE310300000000000000004E /* AppFont.swift in Sources */,
+				AE310300000000000000004F /* AboutView.swift in Sources */,
+				AE3103000000000000000050 /* Scale+Shortcuts.swift in Sources */,
+				AE3103000000000000000051 /* NotesCollection.swift in Sources */,
+				AE3103000000000000000052 /* NoteVisualizationCollection.swift in Sources */,
+				AE3103000000000000000053 /* TransposerView.swift in Sources */,
+				AE3103000000000000000054 /* ChordType.swift in Sources */,
+				AE3103000000000000000055 /* StaffLinesView.swift in Sources */,
+				AE3103000000000000000056 /* InstrumentTabView.swift in Sources */,
+				AE3103000000000000000057 /* MellophoneinFFingerings.swift in Sources */,
+				AE3103000000000000000058 /* Clef.swift in Sources */,
+				AE3103000000000000000059 /* Key.swift in Sources */,
+				AE310300000000000000005A /* Letter.swift in Sources */,
+				AE310300000000000000005B /* Instrument.swift in Sources */,
+				AE310300000000000000005C /* NoteNameMappings.swift in Sources */,
+				AE310300000000000000005D /* ResourcesView.swift in Sources */,
+				AE310300000000000000005E /* InstrumentViewModel.swift in Sources */,
+				AE310300000000000000005F /* Pitch.swift in Sources */,
+				AE3103000000000000000060 /* Note+Shortcuts.swift in Sources */,
+				AE3103000000000000000061 /* TunerConductor.swift in Sources */,
+				AE3103000000000000000062 /* AppEdition.swift in Sources */,
+				AE3103000000000000000063 /* WoodwindFingeringRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,6 +1665,204 @@
 			};
 			name = Release;
 		};
+		AE310100000000000000006E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADAGIO_EDITION = clarinet;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Clarinet Almanac";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.ClarinetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE310100000000000000006F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADAGIO_EDITION = clarinet;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Clarinet Almanac";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.ClarinetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE310200000000000000006E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADAGIO_EDITION = flute;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Flute Almanac";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.FluteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE310200000000000000006F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADAGIO_EDITION = flute;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Flute Almanac";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.FluteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE310300000000000000006E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADAGIO_EDITION = trumpet;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Trumpet Almanac";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.TrumpetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE310300000000000000006F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADAGIO_EDITION = trumpet;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FrenchHornApp/Preview Content\"";
+				DEVELOPMENT_TEAM = L63W9QSW59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrenchHornApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Trumpet Almanac";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow microphone access to detect the pitch of notes you play.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lorenzobrown.TrumpetApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -938,6 +1881,33 @@
 			buildConfigurations = (
 				EB4D9F5328BD5B5B00C7DDCC /* Debug */,
 				EB4D9F5428BD5B5B00C7DDCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3101000000000000000006 /* Build configuration list for PBXNativeTarget "ClarinetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE310100000000000000006E /* Debug */,
+				AE310100000000000000006F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3102000000000000000006 /* Build configuration list for PBXNativeTarget "FluteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE310200000000000000006E /* Debug */,
+				AE310200000000000000006F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3103000000000000000006 /* Build configuration list for PBXNativeTarget "TrumpetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE310300000000000000006E /* Debug */,
+				AE310300000000000000006F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1014,6 +1984,93 @@
 			productName = SoundpipeAudioKit;
 		};
 		AE2000000000000000000002 /* AdagioCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdagioCore;
+		};
+		AE3101000000000000000007 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F6F28C14A7700C7DDCC;
+			productName = AudioKit;
+		};
+		AE3101000000000000000008 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7228C14A9500C7DDCC;
+			productName = AudioKitEX;
+		};
+		AE3101000000000000000009 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7528C14AB200C7DDCC;
+			productName = AudioKitUI;
+		};
+		AE310100000000000000000A /* KissFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7828C14AE500C7DDCC;
+			productName = KissFFT;
+		};
+		AE310100000000000000000B /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7B28C14B4300C7DDCC;
+			productName = SoundpipeAudioKit;
+		};
+		AE310100000000000000000C /* AdagioCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdagioCore;
+		};
+		AE3102000000000000000007 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F6F28C14A7700C7DDCC;
+			productName = AudioKit;
+		};
+		AE3102000000000000000008 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7228C14A9500C7DDCC;
+			productName = AudioKitEX;
+		};
+		AE3102000000000000000009 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7528C14AB200C7DDCC;
+			productName = AudioKitUI;
+		};
+		AE310200000000000000000A /* KissFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7828C14AE500C7DDCC;
+			productName = KissFFT;
+		};
+		AE310200000000000000000B /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7B28C14B4300C7DDCC;
+			productName = SoundpipeAudioKit;
+		};
+		AE310200000000000000000C /* AdagioCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdagioCore;
+		};
+		AE3103000000000000000007 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F6F28C14A7700C7DDCC;
+			productName = AudioKit;
+		};
+		AE3103000000000000000008 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7228C14A9500C7DDCC;
+			productName = AudioKitEX;
+		};
+		AE3103000000000000000009 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7528C14AB200C7DDCC;
+			productName = AudioKitUI;
+		};
+		AE310300000000000000000A /* KissFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7828C14AE500C7DDCC;
+			productName = KissFFT;
+		};
+		AE310300000000000000000B /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB4D9F7B28C14B4300C7DDCC;
+			productName = SoundpipeAudioKit;
+		};
+		AE310300000000000000000C /* AdagioCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AdagioCore;
 		};
